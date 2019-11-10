@@ -13,12 +13,12 @@ namespace AffordableHousing.Pages
     {
         public void OnGet()
         {
-            using(var webClient = new WebClient())
-            {
-                string jsonString = webClient.DownloadString("MyFinalURL");
-                var affordableHouse = AffordableHouse.FromJson(jsonString);
-                ViewData["AffordableHouse"] = affordableHouse;
-            }
+            //using(var webClient = new WebClient())
+            //{
+            //    string jsonString = webClient.DownloadString("MyFinalURL");
+            //    var affordableHouse = AffordableHouse.FromJson(jsonString);
+            //    ViewData["AffordableHouse"] = affordableHouse;
+            //}
         }
     }
 }

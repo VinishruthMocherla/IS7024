@@ -21,3 +21,10 @@ C:\Users\Vinishruth Mocherla\Documents\GitHub\IS7024\AffordableHousing\Affordabl
 C:\Users\Vinishruth Mocherla\Documents\GitHub\IS7024\AffordableHousing\AffordableHousing\obj\Debug\netcoreapp2.2\Razor\Pages\_ViewStart.g.cshtml.cs
 C:\Users\Vinishruth Mocherla\Documents\GitHub\IS7024\AffordableHousing\AffordableHousing\obj\Debug\netcoreapp2.2\AffordableHousing.RazorTargetAssemblyInfo.cache
 C:\Users\Vinishruth Mocherla\Documents\GitHub\IS7024\AffordableHousing\AffordableHousing\obj\Debug\netcoreapp2.2\AffordableHousing.RazorTargetAssemblyInfo.cs
+C:\Users\Vinishruth Mocherla\Documents\GitHub\IS7024\AffordableHousing\AffordableHousing\bin\Debug\netcoreapp2.2\AffordableHousing.pdb
+C:\Users\Vinishruth Mocherla\Documents\GitHub\IS7024\AffordableHousing\AffordableHousing\bin\Debug\netcoreapp2.2\AffordableHousing.Views.dll
+C:\Users\Vinishruth Mocherla\Documents\GitHub\IS7024\AffordableHousing\AffordableHousing\bin\Debug\netcoreapp2.2\AffordableHousing.Views.pdb
+C:\Users\Vinishruth Mocherla\Documents\GitHub\IS7024\AffordableHousing\AffordableHousing\obj\Debug\netcoreapp2.2\AffordableHousing.Views.pdb
+C:\Users\Vinishruth Mocherla\Documents\GitHub\IS7024\AffordableHousing\AffordableHousing\obj\Debug\netcoreapp2.2\AffordableHousing.dll
+C:\Users\Vinishruth Mocherla\Documents\GitHub\IS7024\AffordableHousing\AffordableHousing\obj\Debug\netcoreapp2.2\AffordableHousing.pdb
+C:\Users\Vinishruth Mocherla\Documents\GitHub\IS7024\AffordableHousing\AffordableHousing\obj\Debug\netcoreapp2.2\AffordableHousing.csproj.CopyComplete
