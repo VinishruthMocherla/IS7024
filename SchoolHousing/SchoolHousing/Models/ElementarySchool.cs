@@ -17,30 +17,30 @@ namespace ElementarySchoolResponse
 
     public partial class ElementarySchool
     {
-        [JsonProperty("school_id")]
+        [JsonProperty("school_id", NullValueHandling = NullValueHandling.Ignore)]
         [JsonConverter(typeof(ParseStringConverter))]
-        public long SchoolId { get; set; }
+        public long? SchoolId { get; set; }
 
-        [JsonProperty("name_of_school")]
+        [JsonProperty("name_of_school", NullValueHandling = NullValueHandling.Ignore)]
         public string NameOfSchool { get; set; }
 
-        [JsonProperty("street_address")]
+        [JsonProperty("street_address", NullValueHandling = NullValueHandling.Ignore)]
         public string StreetAddress { get; set; }
 
-        [JsonProperty("city")]
-        public City City { get; set; }
+        [JsonProperty("city", NullValueHandling = NullValueHandling.Ignore)]
+        public City? City { get; set; }
 
-        [JsonProperty("state")]
-        public State State { get; set; }
+        [JsonProperty("state", NullValueHandling = NullValueHandling.Ignore)]
+        public State? State { get; set; }
 
-        [JsonProperty("zip_code")]
+        [JsonProperty("zip_code", NullValueHandling = NullValueHandling.Ignore)]
         [JsonConverter(typeof(ParseStringConverter))]
-        public long ZipCode { get; set; }
+        public long? ZipCode { get; set; }
 
         [JsonProperty("phone_number", NullValueHandling = NullValueHandling.Ignore)]
         public string PhoneNumber { get; set; }
 
-        [JsonProperty("website")]
+        [JsonProperty("website", NullValueHandling = NullValueHandling.Ignore)]
         public Uri Website { get; set; }
 
         [JsonProperty("cps_performance_policy_level", NullValueHandling = NullValueHandling.Ignore)]
@@ -49,8 +49,8 @@ namespace ElementarySchoolResponse
         [JsonProperty("cps_performance_policy_status", NullValueHandling = NullValueHandling.Ignore)]
         public CpsPerformancePolicyStatus? CpsPerformancePolicyStatus { get; set; }
 
-        [JsonProperty("my_voice_my_school_overall_rating")]
-        public MyVoiceMySchoolOverallRating MyVoiceMySchoolOverallRating { get; set; }
+        [JsonProperty("my_voice_my_school_overall_rating", NullValueHandling = NullValueHandling.Ignore)]
+        public MyVoiceMySchoolOverallRating? MyVoiceMySchoolOverallRating { get; set; }
 
         [JsonProperty("student_response_rate", NullValueHandling = NullValueHandling.Ignore)]
         public string StudentResponseRate { get; set; }
@@ -58,23 +58,23 @@ namespace ElementarySchoolResponse
         [JsonProperty("teacher_response_rate", NullValueHandling = NullValueHandling.Ignore)]
         public string TeacherResponseRate { get; set; }
 
-        [JsonProperty("involved_family")]
-        public AmbitiousInstruction InvolvedFamily { get; set; }
+        [JsonProperty("involved_family", NullValueHandling = NullValueHandling.Ignore)]
+        public AmbitiousInstruction? InvolvedFamily { get; set; }
 
-        [JsonProperty("supportive_environment")]
-        public AmbitiousInstruction SupportiveEnvironment { get; set; }
+        [JsonProperty("supportive_environment", NullValueHandling = NullValueHandling.Ignore)]
+        public AmbitiousInstruction? SupportiveEnvironment { get; set; }
 
-        [JsonProperty("ambitious_instruction")]
-        public AmbitiousInstruction AmbitiousInstruction { get; set; }
+        [JsonProperty("ambitious_instruction", NullValueHandling = NullValueHandling.Ignore)]
+        public AmbitiousInstruction? AmbitiousInstruction { get; set; }
 
-        [JsonProperty("effective_leaders")]
-        public AmbitiousInstruction EffectiveLeaders { get; set; }
+        [JsonProperty("effective_leaders", NullValueHandling = NullValueHandling.Ignore)]
+        public AmbitiousInstruction? EffectiveLeaders { get; set; }
 
-        [JsonProperty("collaborative_teachers")]
-        public AmbitiousInstruction CollaborativeTeachers { get; set; }
+        [JsonProperty("collaborative_teachers", NullValueHandling = NullValueHandling.Ignore)]
+        public AmbitiousInstruction? CollaborativeTeachers { get; set; }
 
-        [JsonProperty("safe")]
-        public AmbitiousInstruction Safe { get; set; }
+        [JsonProperty("safe", NullValueHandling = NullValueHandling.Ignore)]
+        public AmbitiousInstruction? Safe { get; set; }
 
         [JsonProperty("school_community", NullValueHandling = NullValueHandling.Ignore)]
         public AmbitiousInstruction? SchoolCommunity { get; set; }
@@ -85,11 +85,11 @@ namespace ElementarySchoolResponse
         [JsonProperty("quality_of_facilities", NullValueHandling = NullValueHandling.Ignore)]
         public AmbitiousInstruction? QualityOfFacilities { get; set; }
 
-        [JsonProperty("healthy_schools_certification")]
-        public HealthySchoolsCertification HealthySchoolsCertification { get; set; }
+        [JsonProperty("healthy_schools_certification", NullValueHandling = NullValueHandling.Ignore)]
+        public HealthySchoolsCertification? HealthySchoolsCertification { get; set; }
 
-        [JsonProperty("creative_schools_certification")]
-        public CreativeSchoolsCertification CreativeSchoolsCertification { get; set; }
+        [JsonProperty("creative_schools_certification", NullValueHandling = NullValueHandling.Ignore)]
+        public CreativeSchoolsCertification? CreativeSchoolsCertification { get; set; }
 
         [JsonProperty("student_attendance_percentage_2013", NullValueHandling = NullValueHandling.Ignore)]
         public string StudentAttendancePercentage2013 { get; set; }
@@ -97,19 +97,19 @@ namespace ElementarySchoolResponse
         [JsonProperty("student_attendance_percentage_2012", NullValueHandling = NullValueHandling.Ignore)]
         public string StudentAttendancePercentage2012 { get; set; }
 
-        [JsonProperty("x_coordinate")]
+        [JsonProperty("x_coordinate", NullValueHandling = NullValueHandling.Ignore)]
         public string XCoordinate { get; set; }
 
-        [JsonProperty("y_coordinate")]
+        [JsonProperty("y_coordinate", NullValueHandling = NullValueHandling.Ignore)]
         public string YCoordinate { get; set; }
 
-        [JsonProperty("longitude")]
+        [JsonProperty("longitude", NullValueHandling = NullValueHandling.Ignore)]
         public string Longitude { get; set; }
 
-        [JsonProperty("latitude")]
+        [JsonProperty("latitude", NullValueHandling = NullValueHandling.Ignore)]
         public string Latitude { get; set; }
 
-        [JsonProperty("location")]
+        [JsonProperty("location", NullValueHandling = NullValueHandling.Ignore)]
         public Location Location { get; set; }
 
         [JsonProperty("teacher_attendance_percentage_2013", NullValueHandling = NullValueHandling.Ignore)]
@@ -273,10 +273,10 @@ namespace ElementarySchoolResponse
 
     public partial class Location
     {
-        [JsonProperty("latitude")]
+        [JsonProperty("latitude", NullValueHandling = NullValueHandling.Ignore)]
         public string Latitude { get; set; }
 
-        [JsonProperty("longitude")]
+        [JsonProperty("longitude", NullValueHandling = NullValueHandling.Ignore)]
         public string Longitude { get; set; }
     }
 
@@ -298,12 +298,12 @@ namespace ElementarySchoolResponse
 
     public partial class ElementarySchool
     {
-        public static List<List<ElementarySchool>> FromJson(string json) => JsonConvert.DeserializeObject<List<List<ElementarySchool>>>(json, ElementarySchoolResponse.Converter.Settings);
+        public static List<ElementarySchool> FromJson(string json) => JsonConvert.DeserializeObject<List<ElementarySchool>>(json, ElementarySchoolResponse.Converter.Settings);
     }
 
     public static class Serialize
     {
-        public static string ToJson(this List<List<ElementarySchool>> self) => JsonConvert.SerializeObject(self, ElementarySchoolResponse.Converter.Settings);
+        public static string ToJson(this List<ElementarySchool> self) => JsonConvert.SerializeObject(self, ElementarySchoolResponse.Converter.Settings);
     }
 
     internal static class Converter
