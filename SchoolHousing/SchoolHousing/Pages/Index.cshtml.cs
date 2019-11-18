@@ -11,9 +11,9 @@ using QuickType;
     {
         public void OnGet()
         {
-            using (var webClient = new WebClient()
-            {
-            var affordableHouse = AffordableHouse.FromJson(jsonstring);
-            }
+        //    using (var webClient = new WebClient()
+        //    {
+        //    var affordableHouse = AffordableHouse.FromJson(jsonstring);
+        //    }
         }
     }
