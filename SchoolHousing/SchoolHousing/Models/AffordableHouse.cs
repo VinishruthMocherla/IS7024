@@ -15,7 +15,7 @@ namespace AffordableHousesResponse
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
 
-    public partial class AffordableHouses
+    public partial class AffordableHouse
     {
         [JsonProperty("community_area")]
         public string CommunityArea { get; set; }
@@ -95,14 +95,14 @@ namespace AffordableHousesResponse
         public string HumanAddress { get; set; }
     }
 
-    public partial class AffordableHouses
+    public partial class AffordableHouse
     {
-        public static AffordableHouses FromJson(string json) => JsonConvert.DeserializeObject<AffordableHouses>(json, AffordableHousesResponse.Converter.Settings);
+        public static AffordableHouse FromJson(string json) => JsonConvert.DeserializeObject<AffordableHouse>(json, AffordableHousesResponse.Converter.Settings);
     }
 
     public static class Serialize
     {
-        public static string ToJson(this AffordableHouses self) => JsonConvert.SerializeObject(self, AffordableHousesResponse.Converter.Settings);
+        public static string ToJson(this AffordableHouse self) => JsonConvert.SerializeObject(self, AffordableHousesResponse.Converter.Settings);
     }
 
     internal static class Converter
