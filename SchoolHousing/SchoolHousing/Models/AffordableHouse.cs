@@ -17,35 +17,35 @@ namespace AffordableHouseResponse
 
     public partial class AffordableHouse
     {
-        [JsonProperty("community_area")]
+        [JsonProperty("community_area", NullValueHandling = NullValueHandling.Ignore)]
         public string CommunityArea { get; set; }
 
-        [JsonProperty("community_area_number")]
+        [JsonProperty("community_area_number", NullValueHandling = NullValueHandling.Ignore)]
         [JsonConverter(typeof(ParseStringConverter))]
-        public long CommunityAreaNumber { get; set; }
+        public long? CommunityAreaNumber { get; set; }
 
-        [JsonProperty("property_type")]
+        [JsonProperty("property_type", NullValueHandling = NullValueHandling.Ignore)]
         public string PropertyType { get; set; }
 
-        [JsonProperty("property_name")]
+        [JsonProperty("property_name", NullValueHandling = NullValueHandling.Ignore)]
         public string PropertyName { get; set; }
 
-        [JsonProperty("address")]
+        [JsonProperty("address", NullValueHandling = NullValueHandling.Ignore)]
         public string Address { get; set; }
 
-        [JsonProperty("zip_code")]
+        [JsonProperty("zip_code", NullValueHandling = NullValueHandling.Ignore)]
         [JsonConverter(typeof(ParseStringConverter))]
-        public long ZipCode { get; set; }
+        public long? ZipCode { get; set; }
 
-        [JsonProperty("phone_number")]
+        [JsonProperty("phone_number", NullValueHandling = NullValueHandling.Ignore)]
         public string PhoneNumber { get; set; }
 
-        [JsonProperty("management_company")]
+        [JsonProperty("management_company", NullValueHandling = NullValueHandling.Ignore)]
         public string ManagementCompany { get; set; }
 
-        [JsonProperty("units")]
+        [JsonProperty("units", NullValueHandling = NullValueHandling.Ignore)]
         [JsonConverter(typeof(ParseStringConverter))]
-        public long Units { get; set; }
+        public long? Units { get; set; }
 
         [JsonProperty("x_coordinate", NullValueHandling = NullValueHandling.Ignore)]
         public string XCoordinate { get; set; }
@@ -85,26 +85,26 @@ namespace AffordableHouseResponse
 
     public partial class Location
     {
-        [JsonProperty("latitude")]
+        [JsonProperty("latitude", NullValueHandling = NullValueHandling.Ignore)]
         public string Latitude { get; set; }
 
-        [JsonProperty("longitude")]
+        [JsonProperty("longitude", NullValueHandling = NullValueHandling.Ignore)]
         public string Longitude { get; set; }
 
-        [JsonProperty("human_address")]
-        public HumanAddress HumanAddress { get; set; }
+        [JsonProperty("human_address", NullValueHandling = NullValueHandling.Ignore)]
+        public HumanAddress? HumanAddress { get; set; }
     }
 
     public enum HumanAddress { AddressCityStateZip };
 
     public partial class AffordableHouse
     {
-        public static List<AffordableHouse> FromJson(string json) => JsonConvert.DeserializeObject<List<AffordableHouse>>(json, AffordableHouseResponse.Converter.Settings);
+        public static AffordableHouse[] FromJson(string json) => JsonConvert.DeserializeObject<AffordableHouse[]>(json, AffordableHouseResponse.Converter.Settings);
     }
 
     public static class Serialize
     {
-        public static string ToJson(this List<AffordableHouse> self) => JsonConvert.SerializeObject(self, AffordableHouseResponse.Converter.Settings);
+        public static string ToJson(this AffordableHouse[] self) => JsonConvert.SerializeObject(self, AffordableHouseResponse.Converter.Settings);
     }
 
     internal static class Converter

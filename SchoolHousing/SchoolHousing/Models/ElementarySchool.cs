@@ -298,12 +298,12 @@ namespace ElementarySchoolResponse
 
     public partial class ElementarySchool
     {
-        public static List<ElementarySchool> FromJson(string json) => JsonConvert.DeserializeObject<List<ElementarySchool>>(json, ElementarySchoolResponse.Converter.Settings);
+        public static ElementarySchool[] FromJson(string json) => JsonConvert.DeserializeObject<ElementarySchool[]>(json, ElementarySchoolResponse.Converter.Settings);
     }
 
     public static class Serialize
     {
-        public static string ToJson(this List<ElementarySchool> self) => JsonConvert.SerializeObject(self, ElementarySchoolResponse.Converter.Settings);
+        public static string ToJson(this ElementarySchool[] self) => JsonConvert.SerializeObject(self, ElementarySchoolResponse.Converter.Settings);
     }
 
     internal static class Converter

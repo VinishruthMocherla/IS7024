@@ -2,9 +2,49 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home";
-
+    var houseData = (AffordableHouseResponse.AffordableHouse[])ViewData["AffordableHouse"];
+    var schoolData = (ElementarySchoolResponse.ElementarySchool[])ViewData["ElementarySchool"];
 }
 
 
 <h1 class="display-4">Affordable Houses near good elementary schools!</h1>
-@*List<ElementarySchoolResponse.ElementarySchool> schoolData = (List<ElementarySchoolResponse.ElementarySchool>).ViewData["schoolData"];*@
+<div class="text-center">
+    <h1 class="display-4">List of Houses</h1>
+    <table>
+        <tr>
+            <th>Community Area Number</th>
+            <th>Community Area</th>
+        </tr>
+        @{
+            foreach (AffordableHouseResponse.AffordableHouse house in houseData)
+            {
+                <tr>
+                    <td>@house.CommunityAreaNumber</td>
+                    <td>@house.CommunityArea</td>
+                </tr>
+            }
+        }
+
+    </table>
+</div>
+
+<h1 class="display-4">Affordable Houses near good elementary schools!</h1>
+<div class="text-center">
+    <h1 class="display-4">List of schools</h1>
+    <table>
+        <tr>
+            <th>School ID</th>
+            <th>Name of School</th>
+        </tr>
+        @{
+            foreach ( ElementarySchoolResponse.ElementarySchool school in schoolData)
+            {
+                <tr>
+                    <td>@school.SchoolId</td>
+                    <td>@school.NameOfSchool</td>
+                </tr>
+            }
+        }
+
+    </table>
+</div>
