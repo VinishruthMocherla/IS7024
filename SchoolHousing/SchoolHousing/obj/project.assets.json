@@ -12085,11 +12085,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\harsh\\source\\repos\\IS7024\\SchoolHousing\\SchoolHousing\\SchoolHousing.csproj",
+      "projectUniqueName": "C:\\Users\\harsh\\source\\repos\\harshdave-1995\\IS7024\\SchoolHousing\\SchoolHousing\\SchoolHousing.csproj",
       "projectName": "SchoolHousing",
-      "projectPath": "C:\\Users\\harsh\\source\\repos\\IS7024\\SchoolHousing\\SchoolHousing\\SchoolHousing.csproj",
+      "projectPath": "C:\\Users\\harsh\\source\\repos\\harshdave-1995\\IS7024\\SchoolHousing\\SchoolHousing\\SchoolHousing.csproj",
       "packagesPath": "C:\\Users\\harsh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\harsh\\source\\repos\\IS7024\\SchoolHousing\\SchoolHousing\\obj\\",
+      "outputPath": "C:\\Users\\harsh\\source\\repos\\harshdave-1995\\IS7024\\SchoolHousing\\SchoolHousing\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

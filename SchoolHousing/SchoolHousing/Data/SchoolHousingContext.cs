@@ -14,6 +14,6 @@ namespace SchoolHousing.Models
         {
         }
 
-        public DbSet<QuickType.AffordableHouse> AffordableHouse { get; set; }
+        public DbSet<QuickType.SchoolHouse> AffordableHouse { get; set; }
     }
 }

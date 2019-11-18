@@ -21,7 +21,7 @@ namespace QuickType
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
 
-    public partial class AffordableHouse
+    public partial class SchoolHouse
     {
         [JsonProperty("community_area")]
         public string CommunityArea { get; set; }
@@ -51,14 +51,14 @@ namespace QuickType
         public string QualityOfFacilities { get; set; }
     }
 
-    public partial class AffordableHouse
+    public partial class SchoolHouse
     {
-        public static List<AffordableHouse> FromJson(string json) => JsonConvert.DeserializeObject<List<AffordableHouse>>(json, QuickType.Converter.Settings);
+        public static List<SchoolHouse> FromJson(string json) => JsonConvert.DeserializeObject<List<SchoolHouse>>(json, QuickType.Converter.Settings);
     }
 
     public static class Serialize
     {
-        public static string ToJson(this List<AffordableHouse> self) => JsonConvert.SerializeObject(self, QuickType.Converter.Settings);
+        public static string ToJson(this List<SchoolHouse> self) => JsonConvert.SerializeObject(self, QuickType.Converter.Settings);
     }
 
     internal static class Converter
