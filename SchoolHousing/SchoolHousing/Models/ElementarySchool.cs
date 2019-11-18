@@ -28,75 +28,73 @@ namespace ElementarySchoolResponse
         public string StreetAddress { get; set; }
 
         [JsonProperty("city")]
-        public string City { get; set; }
+        public City City { get; set; }
 
         [JsonProperty("state")]
-        public string State { get; set; }
+        public State State { get; set; }
 
         [JsonProperty("zip_code")]
         [JsonConverter(typeof(ParseStringConverter))]
         public long ZipCode { get; set; }
 
-        [JsonProperty("phone_number")]
+        [JsonProperty("phone_number", NullValueHandling = NullValueHandling.Ignore)]
         public string PhoneNumber { get; set; }
 
         [JsonProperty("website")]
         public Uri Website { get; set; }
 
-        [JsonProperty("cps_performance_policy_level")]
-        public string CpsPerformancePolicyLevel { get; set; }
+        [JsonProperty("cps_performance_policy_level", NullValueHandling = NullValueHandling.Ignore)]
+        public CpsPerformancePolicyLevel? CpsPerformancePolicyLevel { get; set; }
 
-        [JsonProperty("cps_performance_policy_status")]
-        public string CpsPerformancePolicyStatus { get; set; }
+        [JsonProperty("cps_performance_policy_status", NullValueHandling = NullValueHandling.Ignore)]
+        public CpsPerformancePolicyStatus? CpsPerformancePolicyStatus { get; set; }
 
         [JsonProperty("my_voice_my_school_overall_rating")]
-        public string MyVoiceMySchoolOverallRating { get; set; }
+        public MyVoiceMySchoolOverallRating MyVoiceMySchoolOverallRating { get; set; }
 
-        [JsonProperty("student_response_rate")]
-        [JsonConverter(typeof(ParseStringConverter))]
-        public long StudentResponseRate { get; set; }
+        [JsonProperty("student_response_rate", NullValueHandling = NullValueHandling.Ignore)]
+        public string StudentResponseRate { get; set; }
 
-        [JsonProperty("teacher_response_rate")]
-        [JsonConverter(typeof(ParseStringConverter))]
-        public long TeacherResponseRate { get; set; }
+        [JsonProperty("teacher_response_rate", NullValueHandling = NullValueHandling.Ignore)]
+        public string TeacherResponseRate { get; set; }
 
         [JsonProperty("involved_family")]
-        public string InvolvedFamily { get; set; }
+        public AmbitiousInstruction InvolvedFamily { get; set; }
 
         [JsonProperty("supportive_environment")]
-        public string SupportiveEnvironment { get; set; }
+        public AmbitiousInstruction SupportiveEnvironment { get; set; }
 
         [JsonProperty("ambitious_instruction")]
-        public string AmbitiousInstruction { get; set; }
+        public AmbitiousInstruction AmbitiousInstruction { get; set; }
 
         [JsonProperty("effective_leaders")]
-        public string EffectiveLeaders { get; set; }
+        public AmbitiousInstruction EffectiveLeaders { get; set; }
 
         [JsonProperty("collaborative_teachers")]
-        public string CollaborativeTeachers { get; set; }
+        public AmbitiousInstruction CollaborativeTeachers { get; set; }
 
         [JsonProperty("safe")]
-        public string Safe { get; set; }
+        public AmbitiousInstruction Safe { get; set; }
 
-        [JsonProperty("school_community")]
-        public string SchoolCommunity { get; set; }
+        [JsonProperty("school_community", NullValueHandling = NullValueHandling.Ignore)]
+        public AmbitiousInstruction? SchoolCommunity { get; set; }
 
-        [JsonProperty("parent_teacher_partnership")]
-        public string ParentTeacherPartnership { get; set; }
+        [JsonProperty("parent_teacher_partnership", NullValueHandling = NullValueHandling.Ignore)]
+        public AmbitiousInstruction? ParentTeacherPartnership { get; set; }
 
-        [JsonProperty("quality_of_facilities")]
-        public string QualityOfFacilities { get; set; }
+        [JsonProperty("quality_of_facilities", NullValueHandling = NullValueHandling.Ignore)]
+        public AmbitiousInstruction? QualityOfFacilities { get; set; }
 
         [JsonProperty("healthy_schools_certification")]
-        public string HealthySchoolsCertification { get; set; }
+        public HealthySchoolsCertification HealthySchoolsCertification { get; set; }
 
         [JsonProperty("creative_schools_certification")]
-        public string CreativeSchoolsCertification { get; set; }
+        public CreativeSchoolsCertification CreativeSchoolsCertification { get; set; }
 
-        [JsonProperty("student_attendance_percentage_2013")]
+        [JsonProperty("student_attendance_percentage_2013", NullValueHandling = NullValueHandling.Ignore)]
         public string StudentAttendancePercentage2013 { get; set; }
 
-        [JsonProperty("student_attendance_percentage_2012")]
+        [JsonProperty("student_attendance_percentage_2012", NullValueHandling = NullValueHandling.Ignore)]
         public string StudentAttendancePercentage2012 { get; set; }
 
         [JsonProperty("x_coordinate")]
@@ -113,6 +111,164 @@ namespace ElementarySchoolResponse
 
         [JsonProperty("location")]
         public Location Location { get; set; }
+
+        [JsonProperty("teacher_attendance_percentage_2013", NullValueHandling = NullValueHandling.Ignore)]
+        public string TeacherAttendancePercentage2013 { get; set; }
+
+        [JsonProperty("teacher_attendance_percentage_2012", NullValueHandling = NullValueHandling.Ignore)]
+        public string TeacherAttendancePercentage2012 { get; set; }
+
+        [JsonProperty("nwea_reading_attainment_percentile_all_grades", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(ParseStringConverter))]
+        public long? NweaReadingAttainmentPercentileAllGrades { get; set; }
+
+        [JsonProperty("nwea_reading_attainment_percentile_grade_2", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(ParseStringConverter))]
+        public long? NweaReadingAttainmentPercentileGrade2 { get; set; }
+
+        [JsonProperty("nwea_math_attainment_percentile_all_grades", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(ParseStringConverter))]
+        public long? NweaMathAttainmentPercentileAllGrades { get; set; }
+
+        [JsonProperty("suspensions_per_100_students_2013", NullValueHandling = NullValueHandling.Ignore)]
+        public string SuspensionsPer100_Students2013 { get; set; }
+
+        [JsonProperty("suspensions_per_100_students_2012", NullValueHandling = NullValueHandling.Ignore)]
+        public string SuspensionsPer100_Students2012 { get; set; }
+
+        [JsonProperty("grade_3_8_on_track_percentage_2013", NullValueHandling = NullValueHandling.Ignore)]
+        public string Grade3_8_OnTrackPercentage2013 { get; set; }
+
+        [JsonProperty("nwea_reading_growth_percentile_all_grades", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(ParseStringConverter))]
+        public long? NweaReadingGrowthPercentileAllGrades { get; set; }
+
+        [JsonProperty("nwea_reading_growth_percentile_grade_3", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(ParseStringConverter))]
+        public long? NweaReadingGrowthPercentileGrade3 { get; set; }
+
+        [JsonProperty("nwea_reading_growth_percentile_grade_4", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(ParseStringConverter))]
+        public long? NweaReadingGrowthPercentileGrade4 { get; set; }
+
+        [JsonProperty("nwea_reading_growth_percentile_grade_5", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(ParseStringConverter))]
+        public long? NweaReadingGrowthPercentileGrade5 { get; set; }
+
+        [JsonProperty("nwea_reading_growth_percentile_grade_6", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(ParseStringConverter))]
+        public long? NweaReadingGrowthPercentileGrade6 { get; set; }
+
+        [JsonProperty("nwea_math_growth_percentile_all_grades", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(ParseStringConverter))]
+        public long? NweaMathGrowthPercentileAllGrades { get; set; }
+
+        [JsonProperty("nwea_math_growth_percentile_grade_3", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(ParseStringConverter))]
+        public long? NweaMathGrowthPercentileGrade3 { get; set; }
+
+        [JsonProperty("nwea_math_growth_percentile_grade_4", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(ParseStringConverter))]
+        public long? NweaMathGrowthPercentileGrade4 { get; set; }
+
+        [JsonProperty("nwea_math_growth_percentile_grade_5", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(ParseStringConverter))]
+        public long? NweaMathGrowthPercentileGrade5 { get; set; }
+
+        [JsonProperty("nwea_math_growth_percentile_grade_6", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(ParseStringConverter))]
+        public long? NweaMathGrowthPercentileGrade6 { get; set; }
+
+        [JsonProperty("nwea_reading_attainment_percentile_grade_3", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(ParseStringConverter))]
+        public long? NweaReadingAttainmentPercentileGrade3 { get; set; }
+
+        [JsonProperty("nwea_reading_attainment_percentile_grade_4", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(ParseStringConverter))]
+        public long? NweaReadingAttainmentPercentileGrade4 { get; set; }
+
+        [JsonProperty("nwea_reading_attainment_percentile_grade_5", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(ParseStringConverter))]
+        public long? NweaReadingAttainmentPercentileGrade5 { get; set; }
+
+        [JsonProperty("nwea_reading_attainment_percentile_grade_6", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(ParseStringConverter))]
+        public long? NweaReadingAttainmentPercentileGrade6 { get; set; }
+
+        [JsonProperty("nwea_math_attainment_percentile_grade_2", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(ParseStringConverter))]
+        public long? NweaMathAttainmentPercentileGrade2 { get; set; }
+
+        [JsonProperty("nwea_math_attainment_percentile_grade_3", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(ParseStringConverter))]
+        public long? NweaMathAttainmentPercentileGrade3 { get; set; }
+
+        [JsonProperty("nwea_math_attainment_percentile_grade_4", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(ParseStringConverter))]
+        public long? NweaMathAttainmentPercentileGrade4 { get; set; }
+
+        [JsonProperty("nwea_math_attainment_percentile_grade_5", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(ParseStringConverter))]
+        public long? NweaMathAttainmentPercentileGrade5 { get; set; }
+
+        [JsonProperty("nwea_math_attainment_percentile_grade_6", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(ParseStringConverter))]
+        public long? NweaMathAttainmentPercentileGrade6 { get; set; }
+
+        [JsonProperty("percentage_misconducts_resulting_in_suspension_2013", NullValueHandling = NullValueHandling.Ignore)]
+        public string PercentageMisconductsResultingInSuspension2013 { get; set; }
+
+        [JsonProperty("percentage_misconducts_resulting_in_suspension_2012", NullValueHandling = NullValueHandling.Ignore)]
+        public string PercentageMisconductsResultingInSuspension2012 { get; set; }
+
+        [JsonProperty("average_length_of_suspensions_2013", NullValueHandling = NullValueHandling.Ignore)]
+        public string AverageLengthOfSuspensions2013 { get; set; }
+
+        [JsonProperty("average_length_of_suspension_2012", NullValueHandling = NullValueHandling.Ignore)]
+        public string AverageLengthOfSuspension2012 { get; set; }
+
+        [JsonProperty("probation_length", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(ParseStringConverter))]
+        public long? ProbationLength { get; set; }
+
+        [JsonProperty("nwea_reading_growth_percentile_grade_7", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(ParseStringConverter))]
+        public long? NweaReadingGrowthPercentileGrade7 { get; set; }
+
+        [JsonProperty("nwea_reading_growth_percentile_grade_8", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(ParseStringConverter))]
+        public long? NweaReadingGrowthPercentileGrade8 { get; set; }
+
+        [JsonProperty("nwea_math_growth_percentile_grade_7", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(ParseStringConverter))]
+        public long? NweaMathGrowthPercentileGrade7 { get; set; }
+
+        [JsonProperty("nwea_math_growth_percentile_grade_8", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(ParseStringConverter))]
+        public long? NweaMathGrowthPercentileGrade8 { get; set; }
+
+        [JsonProperty("nwea_reading_attainment_percentile_grade_7", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(ParseStringConverter))]
+        public long? NweaReadingAttainmentPercentileGrade7 { get; set; }
+
+        [JsonProperty("nwea_reading_attainment_percentile_grade_8", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(ParseStringConverter))]
+        public long? NweaReadingAttainmentPercentileGrade8 { get; set; }
+
+        [JsonProperty("nwea_math_attainment_percentile_grade_7", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(ParseStringConverter))]
+        public long? NweaMathAttainmentPercentileGrade7 { get; set; }
+
+        [JsonProperty("nwea_math_attainment_percentile_grade_8", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(ParseStringConverter))]
+        public long? NweaMathAttainmentPercentileGrade8 { get; set; }
+
+        [JsonProperty("one_year_drop_out_rate_percentage_2013", NullValueHandling = NullValueHandling.Ignore)]
+        public string OneYearDropOutRatePercentage2013 { get; set; }
+
+        [JsonProperty("blue_ribbon_award", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonConverter(typeof(ParseStringConverter))]
+        public long? BlueRibbonAward { get; set; }
     }
 
     public partial class Location
@@ -124,14 +280,30 @@ namespace ElementarySchoolResponse
         public string Longitude { get; set; }
     }
 
+    public enum AmbitiousInstruction { Neutral, NotEnoughData, Strong, VeryStrong, VeryWeak, Weak };
+
+    public enum City { Chicago };
+
+    public enum CpsPerformancePolicyLevel { Level1, Level2, Level3, NotEnoughData };
+
+    public enum CpsPerformancePolicyStatus { NotApplicable, NotOnProbation, OnProbation };
+
+    public enum CreativeSchoolsCertification { Developing, Emerging, Excelling, IncompleteData, Strong };
+
+    public enum HealthySchoolsCertification { HealthySchoolsCertified, NotCertified, PendingCertification };
+
+    public enum MyVoiceMySchoolOverallRating { ModeratelyOrganized, NotEnoughData, NotYetOrganized, Organized, PartiallyOrganized, WellOrganized };
+
+    public enum State { Il };
+
     public partial class ElementarySchool
     {
-        public static List<ElementarySchool> FromJson(string json) => JsonConvert.DeserializeObject<List<ElementarySchool>>(json, ElementarySchoolResponse.Converter.Settings);
+        public static List<List<ElementarySchool>> FromJson(string json) => JsonConvert.DeserializeObject<List<List<ElementarySchool>>>(json, ElementarySchoolResponse.Converter.Settings);
     }
 
     public static class Serialize
     {
-        public static string ToJson(this List<ElementarySchool> self) => JsonConvert.SerializeObject(self, ElementarySchoolResponse.Converter.Settings);
+        public static string ToJson(this List<List<ElementarySchool>> self) => JsonConvert.SerializeObject(self, ElementarySchoolResponse.Converter.Settings);
     }
 
     internal static class Converter
@@ -142,9 +314,78 @@ namespace ElementarySchoolResponse
             DateParseHandling = DateParseHandling.None,
             Converters =
             {
+                AmbitiousInstructionConverter.Singleton,
+                CityConverter.Singleton,
+                CpsPerformancePolicyLevelConverter.Singleton,
+                CpsPerformancePolicyStatusConverter.Singleton,
+                CreativeSchoolsCertificationConverter.Singleton,
+                HealthySchoolsCertificationConverter.Singleton,
+                MyVoiceMySchoolOverallRatingConverter.Singleton,
+                StateConverter.Singleton,
                 new IsoDateTimeConverter { DateTimeStyles = DateTimeStyles.AssumeUniversal }
             },
         };
+    }
+
+    internal class AmbitiousInstructionConverter : JsonConverter
+    {
+        public override bool CanConvert(Type t) => t == typeof(AmbitiousInstruction) || t == typeof(AmbitiousInstruction?);
+
+        public override object ReadJson(JsonReader reader, Type t, object existingValue, JsonSerializer serializer)
+        {
+            if (reader.TokenType == JsonToken.Null) return null;
+            var value = serializer.Deserialize<string>(reader);
+            switch (value)
+            {
+                case "NEUTRAL":
+                    return AmbitiousInstruction.Neutral;
+                case "NOT ENOUGH DATA":
+                    return AmbitiousInstruction.NotEnoughData;
+                case "STRONG":
+                    return AmbitiousInstruction.Strong;
+                case "VERY STRONG":
+                    return AmbitiousInstruction.VeryStrong;
+                case "VERY WEAK":
+                    return AmbitiousInstruction.VeryWeak;
+                case "WEAK":
+                    return AmbitiousInstruction.Weak;
+            }
+            throw new Exception("Cannot unmarshal type AmbitiousInstruction");
+        }
+
+        public override void WriteJson(JsonWriter writer, object untypedValue, JsonSerializer serializer)
+        {
+            if (untypedValue == null)
+            {
+                serializer.Serialize(writer, null);
+                return;
+            }
+            var value = (AmbitiousInstruction)untypedValue;
+            switch (value)
+            {
+                case AmbitiousInstruction.Neutral:
+                    serializer.Serialize(writer, "NEUTRAL");
+                    return;
+                case AmbitiousInstruction.NotEnoughData:
+                    serializer.Serialize(writer, "NOT ENOUGH DATA");
+                    return;
+                case AmbitiousInstruction.Strong:
+                    serializer.Serialize(writer, "STRONG");
+                    return;
+                case AmbitiousInstruction.VeryStrong:
+                    serializer.Serialize(writer, "VERY STRONG");
+                    return;
+                case AmbitiousInstruction.VeryWeak:
+                    serializer.Serialize(writer, "VERY WEAK");
+                    return;
+                case AmbitiousInstruction.Weak:
+                    serializer.Serialize(writer, "WEAK");
+                    return;
+            }
+            throw new Exception("Cannot marshal type AmbitiousInstruction");
+        }
+
+        public static readonly AmbitiousInstructionConverter Singleton = new AmbitiousInstructionConverter();
     }
 
     internal class ParseStringConverter : JsonConverter
@@ -176,5 +417,333 @@ namespace ElementarySchoolResponse
         }
 
         public static readonly ParseStringConverter Singleton = new ParseStringConverter();
+    }
+
+    internal class CityConverter : JsonConverter
+    {
+        public override bool CanConvert(Type t) => t == typeof(City) || t == typeof(City?);
+
+        public override object ReadJson(JsonReader reader, Type t, object existingValue, JsonSerializer serializer)
+        {
+            if (reader.TokenType == JsonToken.Null) return null;
+            var value = serializer.Deserialize<string>(reader);
+            if (value == "Chicago")
+            {
+                return City.Chicago;
+            }
+            throw new Exception("Cannot unmarshal type City");
+        }
+
+        public override void WriteJson(JsonWriter writer, object untypedValue, JsonSerializer serializer)
+        {
+            if (untypedValue == null)
+            {
+                serializer.Serialize(writer, null);
+                return;
+            }
+            var value = (City)untypedValue;
+            if (value == City.Chicago)
+            {
+                serializer.Serialize(writer, "Chicago");
+                return;
+            }
+            throw new Exception("Cannot marshal type City");
+        }
+
+        public static readonly CityConverter Singleton = new CityConverter();
+    }
+
+    internal class CpsPerformancePolicyLevelConverter : JsonConverter
+    {
+        public override bool CanConvert(Type t) => t == typeof(CpsPerformancePolicyLevel) || t == typeof(CpsPerformancePolicyLevel?);
+
+        public override object ReadJson(JsonReader reader, Type t, object existingValue, JsonSerializer serializer)
+        {
+            if (reader.TokenType == JsonToken.Null) return null;
+            var value = serializer.Deserialize<string>(reader);
+            switch (value)
+            {
+                case "LEVEL 1":
+                    return CpsPerformancePolicyLevel.Level1;
+                case "LEVEL 2":
+                    return CpsPerformancePolicyLevel.Level2;
+                case "LEVEL 3":
+                    return CpsPerformancePolicyLevel.Level3;
+                case "NOT ENOUGH DATA":
+                    return CpsPerformancePolicyLevel.NotEnoughData;
+            }
+            throw new Exception("Cannot unmarshal type CpsPerformancePolicyLevel");
+        }
+
+        public override void WriteJson(JsonWriter writer, object untypedValue, JsonSerializer serializer)
+        {
+            if (untypedValue == null)
+            {
+                serializer.Serialize(writer, null);
+                return;
+            }
+            var value = (CpsPerformancePolicyLevel)untypedValue;
+            switch (value)
+            {
+                case CpsPerformancePolicyLevel.Level1:
+                    serializer.Serialize(writer, "LEVEL 1");
+                    return;
+                case CpsPerformancePolicyLevel.Level2:
+                    serializer.Serialize(writer, "LEVEL 2");
+                    return;
+                case CpsPerformancePolicyLevel.Level3:
+                    serializer.Serialize(writer, "LEVEL 3");
+                    return;
+                case CpsPerformancePolicyLevel.NotEnoughData:
+                    serializer.Serialize(writer, "NOT ENOUGH DATA");
+                    return;
+            }
+            throw new Exception("Cannot marshal type CpsPerformancePolicyLevel");
+        }
+
+        public static readonly CpsPerformancePolicyLevelConverter Singleton = new CpsPerformancePolicyLevelConverter();
+    }
+
+    internal class CpsPerformancePolicyStatusConverter : JsonConverter
+    {
+        public override bool CanConvert(Type t) => t == typeof(CpsPerformancePolicyStatus) || t == typeof(CpsPerformancePolicyStatus?);
+
+        public override object ReadJson(JsonReader reader, Type t, object existingValue, JsonSerializer serializer)
+        {
+            if (reader.TokenType == JsonToken.Null) return null;
+            var value = serializer.Deserialize<string>(reader);
+            switch (value)
+            {
+                case "NOT APPLICABLE":
+                    return CpsPerformancePolicyStatus.NotApplicable;
+                case "NOT ON PROBATION":
+                    return CpsPerformancePolicyStatus.NotOnProbation;
+                case "ON PROBATION":
+                    return CpsPerformancePolicyStatus.OnProbation;
+            }
+            throw new Exception("Cannot unmarshal type CpsPerformancePolicyStatus");
+        }
+
+        public override void WriteJson(JsonWriter writer, object untypedValue, JsonSerializer serializer)
+        {
+            if (untypedValue == null)
+            {
+                serializer.Serialize(writer, null);
+                return;
+            }
+            var value = (CpsPerformancePolicyStatus)untypedValue;
+            switch (value)
+            {
+                case CpsPerformancePolicyStatus.NotApplicable:
+                    serializer.Serialize(writer, "NOT APPLICABLE");
+                    return;
+                case CpsPerformancePolicyStatus.NotOnProbation:
+                    serializer.Serialize(writer, "NOT ON PROBATION");
+                    return;
+                case CpsPerformancePolicyStatus.OnProbation:
+                    serializer.Serialize(writer, "ON PROBATION");
+                    return;
+            }
+            throw new Exception("Cannot marshal type CpsPerformancePolicyStatus");
+        }
+
+        public static readonly CpsPerformancePolicyStatusConverter Singleton = new CpsPerformancePolicyStatusConverter();
+    }
+
+    internal class CreativeSchoolsCertificationConverter : JsonConverter
+    {
+        public override bool CanConvert(Type t) => t == typeof(CreativeSchoolsCertification) || t == typeof(CreativeSchoolsCertification?);
+
+        public override object ReadJson(JsonReader reader, Type t, object existingValue, JsonSerializer serializer)
+        {
+            if (reader.TokenType == JsonToken.Null) return null;
+            var value = serializer.Deserialize<string>(reader);
+            switch (value)
+            {
+                case "DEVELOPING":
+                    return CreativeSchoolsCertification.Developing;
+                case "EMERGING":
+                    return CreativeSchoolsCertification.Emerging;
+                case "EXCELLING":
+                    return CreativeSchoolsCertification.Excelling;
+                case "INCOMPLETE DATA":
+                    return CreativeSchoolsCertification.IncompleteData;
+                case "STRONG":
+                    return CreativeSchoolsCertification.Strong;
+            }
+            throw new Exception("Cannot unmarshal type CreativeSchoolsCertification");
+        }
+
+        public override void WriteJson(JsonWriter writer, object untypedValue, JsonSerializer serializer)
+        {
+            if (untypedValue == null)
+            {
+                serializer.Serialize(writer, null);
+                return;
+            }
+            var value = (CreativeSchoolsCertification)untypedValue;
+            switch (value)
+            {
+                case CreativeSchoolsCertification.Developing:
+                    serializer.Serialize(writer, "DEVELOPING");
+                    return;
+                case CreativeSchoolsCertification.Emerging:
+                    serializer.Serialize(writer, "EMERGING");
+                    return;
+                case CreativeSchoolsCertification.Excelling:
+                    serializer.Serialize(writer, "EXCELLING");
+                    return;
+                case CreativeSchoolsCertification.IncompleteData:
+                    serializer.Serialize(writer, "INCOMPLETE DATA");
+                    return;
+                case CreativeSchoolsCertification.Strong:
+                    serializer.Serialize(writer, "STRONG");
+                    return;
+            }
+            throw new Exception("Cannot marshal type CreativeSchoolsCertification");
+        }
+
+        public static readonly CreativeSchoolsCertificationConverter Singleton = new CreativeSchoolsCertificationConverter();
+    }
+
+    internal class HealthySchoolsCertificationConverter : JsonConverter
+    {
+        public override bool CanConvert(Type t) => t == typeof(HealthySchoolsCertification) || t == typeof(HealthySchoolsCertification?);
+
+        public override object ReadJson(JsonReader reader, Type t, object existingValue, JsonSerializer serializer)
+        {
+            if (reader.TokenType == JsonToken.Null) return null;
+            var value = serializer.Deserialize<string>(reader);
+            switch (value)
+            {
+                case "HEALTHY SCHOOLS CERTIFIED":
+                    return HealthySchoolsCertification.HealthySchoolsCertified;
+                case "NOT CERTIFIED":
+                    return HealthySchoolsCertification.NotCertified;
+                case "PENDING CERTIFICATION":
+                    return HealthySchoolsCertification.PendingCertification;
+            }
+            throw new Exception("Cannot unmarshal type HealthySchoolsCertification");
+        }
+
+        public override void WriteJson(JsonWriter writer, object untypedValue, JsonSerializer serializer)
+        {
+            if (untypedValue == null)
+            {
+                serializer.Serialize(writer, null);
+                return;
+            }
+            var value = (HealthySchoolsCertification)untypedValue;
+            switch (value)
+            {
+                case HealthySchoolsCertification.HealthySchoolsCertified:
+                    serializer.Serialize(writer, "HEALTHY SCHOOLS CERTIFIED");
+                    return;
+                case HealthySchoolsCertification.NotCertified:
+                    serializer.Serialize(writer, "NOT CERTIFIED");
+                    return;
+                case HealthySchoolsCertification.PendingCertification:
+                    serializer.Serialize(writer, "PENDING CERTIFICATION");
+                    return;
+            }
+            throw new Exception("Cannot marshal type HealthySchoolsCertification");
+        }
+
+        public static readonly HealthySchoolsCertificationConverter Singleton = new HealthySchoolsCertificationConverter();
+    }
+
+    internal class MyVoiceMySchoolOverallRatingConverter : JsonConverter
+    {
+        public override bool CanConvert(Type t) => t == typeof(MyVoiceMySchoolOverallRating) || t == typeof(MyVoiceMySchoolOverallRating?);
+
+        public override object ReadJson(JsonReader reader, Type t, object existingValue, JsonSerializer serializer)
+        {
+            if (reader.TokenType == JsonToken.Null) return null;
+            var value = serializer.Deserialize<string>(reader);
+            switch (value)
+            {
+                case "MODERATELY ORGANIZED":
+                    return MyVoiceMySchoolOverallRating.ModeratelyOrganized;
+                case "NOT ENOUGH DATA":
+                    return MyVoiceMySchoolOverallRating.NotEnoughData;
+                case "NOT YET ORGANIZED":
+                    return MyVoiceMySchoolOverallRating.NotYetOrganized;
+                case "ORGANIZED":
+                    return MyVoiceMySchoolOverallRating.Organized;
+                case "PARTIALLY ORGANIZED":
+                    return MyVoiceMySchoolOverallRating.PartiallyOrganized;
+                case "WELL-ORGANIZED":
+                    return MyVoiceMySchoolOverallRating.WellOrganized;
+            }
+            throw new Exception("Cannot unmarshal type MyVoiceMySchoolOverallRating");
+        }
+
+        public override void WriteJson(JsonWriter writer, object untypedValue, JsonSerializer serializer)
+        {
+            if (untypedValue == null)
+            {
+                serializer.Serialize(writer, null);
+                return;
+            }
+            var value = (MyVoiceMySchoolOverallRating)untypedValue;
+            switch (value)
+            {
+                case MyVoiceMySchoolOverallRating.ModeratelyOrganized:
+                    serializer.Serialize(writer, "MODERATELY ORGANIZED");
+                    return;
+                case MyVoiceMySchoolOverallRating.NotEnoughData:
+                    serializer.Serialize(writer, "NOT ENOUGH DATA");
+                    return;
+                case MyVoiceMySchoolOverallRating.NotYetOrganized:
+                    serializer.Serialize(writer, "NOT YET ORGANIZED");
+                    return;
+                case MyVoiceMySchoolOverallRating.Organized:
+                    serializer.Serialize(writer, "ORGANIZED");
+                    return;
+                case MyVoiceMySchoolOverallRating.PartiallyOrganized:
+                    serializer.Serialize(writer, "PARTIALLY ORGANIZED");
+                    return;
+                case MyVoiceMySchoolOverallRating.WellOrganized:
+                    serializer.Serialize(writer, "WELL-ORGANIZED");
+                    return;
+            }
+            throw new Exception("Cannot marshal type MyVoiceMySchoolOverallRating");
+        }
+
+        public static readonly MyVoiceMySchoolOverallRatingConverter Singleton = new MyVoiceMySchoolOverallRatingConverter();
+    }
+
+    internal class StateConverter : JsonConverter
+    {
+        public override bool CanConvert(Type t) => t == typeof(State) || t == typeof(State?);
+
+        public override object ReadJson(JsonReader reader, Type t, object existingValue, JsonSerializer serializer)
+        {
+            if (reader.TokenType == JsonToken.Null) return null;
+            var value = serializer.Deserialize<string>(reader);
+            if (value == "IL")
+            {
+                return State.Il;
+            }
+            throw new Exception("Cannot unmarshal type State");
+        }
+
+        public override void WriteJson(JsonWriter writer, object untypedValue, JsonSerializer serializer)
+        {
+            if (untypedValue == null)
+            {
+                serializer.Serialize(writer, null);
+                return;
+            }
+            var value = (State)untypedValue;
+            if (value == State.Il)
+            {
+                serializer.Serialize(writer, "IL");
+                return;
+            }
+            throw new Exception("Cannot marshal type State");
+        }
+
+        public static readonly StateConverter Singleton = new StateConverter();
     }
 }

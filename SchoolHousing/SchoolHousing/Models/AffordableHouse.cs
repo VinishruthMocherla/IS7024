@@ -2,11 +2,11 @@
 //
 // To parse this JSON data, add NuGet 'Newtonsoft.Json' then do:
 //
-//    using AffordableHousesResponse;
+//    using AffordableHouseResponse;
 //
-//    var affordableHouses = AffordableHouses.FromJson(jsonString);
+//    var affordableHouse = AffordableHouse.FromJson(jsonString);
 
-namespace AffordableHousesResponse
+namespace AffordableHouseResponse
 {
     using System;
     using System.Collections.Generic;
@@ -47,40 +47,40 @@ namespace AffordableHousesResponse
         [JsonConverter(typeof(ParseStringConverter))]
         public long Units { get; set; }
 
-        [JsonProperty("x_coordinate")]
+        [JsonProperty("x_coordinate", NullValueHandling = NullValueHandling.Ignore)]
         public string XCoordinate { get; set; }
 
-        [JsonProperty("y_coordinate")]
+        [JsonProperty("y_coordinate", NullValueHandling = NullValueHandling.Ignore)]
         public string YCoordinate { get; set; }
 
-        [JsonProperty("latitude")]
+        [JsonProperty("latitude", NullValueHandling = NullValueHandling.Ignore)]
         public string Latitude { get; set; }
 
-        [JsonProperty("longitude")]
+        [JsonProperty("longitude", NullValueHandling = NullValueHandling.Ignore)]
         public string Longitude { get; set; }
 
-        [JsonProperty("location")]
+        [JsonProperty("location", NullValueHandling = NullValueHandling.Ignore)]
         public Location Location { get; set; }
 
-        [JsonProperty(":@computed_region_awaf_s7ux")]
+        [JsonProperty(":@computed_region_awaf_s7ux", NullValueHandling = NullValueHandling.Ignore)]
         [JsonConverter(typeof(ParseStringConverter))]
-        public long ComputedRegionAwafS7Ux { get; set; }
+        public long? ComputedRegionAwafS7Ux { get; set; }
 
-        [JsonProperty(":@computed_region_43wa_7qmu")]
+        [JsonProperty(":@computed_region_43wa_7qmu", NullValueHandling = NullValueHandling.Ignore)]
         [JsonConverter(typeof(ParseStringConverter))]
-        public long ComputedRegion43Wa7Qmu { get; set; }
+        public long? ComputedRegion43Wa7Qmu { get; set; }
 
-        [JsonProperty(":@computed_region_vrxf_vc4k")]
+        [JsonProperty(":@computed_region_vrxf_vc4k", NullValueHandling = NullValueHandling.Ignore)]
         [JsonConverter(typeof(ParseStringConverter))]
-        public long ComputedRegionVrxfVc4K { get; set; }
+        public long? ComputedRegionVrxfVc4K { get; set; }
 
-        [JsonProperty(":@computed_region_6mkv_f3dw")]
+        [JsonProperty(":@computed_region_6mkv_f3dw", NullValueHandling = NullValueHandling.Ignore)]
         [JsonConverter(typeof(ParseStringConverter))]
-        public long ComputedRegion6MkvF3Dw { get; set; }
+        public long? ComputedRegion6MkvF3Dw { get; set; }
 
-        [JsonProperty(":@computed_region_bdys_3d7i")]
+        [JsonProperty(":@computed_region_bdys_3d7i", NullValueHandling = NullValueHandling.Ignore)]
         [JsonConverter(typeof(ParseStringConverter))]
-        public long ComputedRegionBdys3D7I { get; set; }
+        public long? ComputedRegionBdys3D7I { get; set; }
     }
 
     public partial class Location
@@ -92,17 +92,19 @@ namespace AffordableHousesResponse
         public string Longitude { get; set; }
 
         [JsonProperty("human_address")]
-        public string HumanAddress { get; set; }
+        public HumanAddress HumanAddress { get; set; }
     }
+
+    public enum HumanAddress { AddressCityStateZip };
 
     public partial class AffordableHouse
     {
-        public static AffordableHouse FromJson(string json) => JsonConvert.DeserializeObject<AffordableHouse>(json, AffordableHousesResponse.Converter.Settings);
+        public static List<AffordableHouse> FromJson(string json) => JsonConvert.DeserializeObject<List<AffordableHouse>>(json, AffordableHouseResponse.Converter.Settings);
     }
 
     public static class Serialize
     {
-        public static string ToJson(this AffordableHouse self) => JsonConvert.SerializeObject(self, AffordableHousesResponse.Converter.Settings);
+        public static string ToJson(this List<AffordableHouse> self) => JsonConvert.SerializeObject(self, AffordableHouseResponse.Converter.Settings);
     }
 
     internal static class Converter
@@ -113,6 +115,7 @@ namespace AffordableHousesResponse
             DateParseHandling = DateParseHandling.None,
             Converters =
             {
+                HumanAddressConverter.Singleton,
                 new IsoDateTimeConverter { DateTimeStyles = DateTimeStyles.AssumeUniversal }
             },
         };
@@ -147,5 +150,39 @@ namespace AffordableHousesResponse
         }
 
         public static readonly ParseStringConverter Singleton = new ParseStringConverter();
+    }
+
+    internal class HumanAddressConverter : JsonConverter
+    {
+        public override bool CanConvert(Type t) => t == typeof(HumanAddress) || t == typeof(HumanAddress?);
+
+        public override object ReadJson(JsonReader reader, Type t, object existingValue, JsonSerializer serializer)
+        {
+            if (reader.TokenType == JsonToken.Null) return null;
+            var value = serializer.Deserialize<string>(reader);
+            if (value == "{\"address\": \"\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}")
+            {
+                return HumanAddress.AddressCityStateZip;
+            }
+            throw new Exception("Cannot unmarshal type HumanAddress");
+        }
+
+        public override void WriteJson(JsonWriter writer, object untypedValue, JsonSerializer serializer)
+        {
+            if (untypedValue == null)
+            {
+                serializer.Serialize(writer, null);
+                return;
+            }
+            var value = (HumanAddress)untypedValue;
+            if (value == HumanAddress.AddressCityStateZip)
+            {
+                serializer.Serialize(writer, "{\"address\": \"\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}");
+                return;
+            }
+            throw new Exception("Cannot marshal type HumanAddress");
+        }
+
+        public static readonly HumanAddressConverter Singleton = new HumanAddressConverter();
     }
 }
