@@ -43,6 +43,12 @@ namespace ElementarySchoolResponse
         [JsonProperty("website")]
         public Uri Website { get; set; }
 
+        [JsonProperty("cps_performance_policy_level")]
+        public string CpsPerformancePolicyLevel { get; set; }
+
+        [JsonProperty("cps_performance_policy_status")]
+        public string CpsPerformancePolicyStatus { get; set; }
+
         [JsonProperty("my_voice_my_school_overall_rating")]
         public string MyVoiceMySchoolOverallRating { get; set; }
 
@@ -93,12 +99,6 @@ namespace ElementarySchoolResponse
         [JsonProperty("student_attendance_percentage_2012")]
         public string StudentAttendancePercentage2012 { get; set; }
 
-        [JsonProperty("teacher_attendance_percentage_2013")]
-        public string TeacherAttendancePercentage2013 { get; set; }
-
-        [JsonProperty("teacher_attendance_percentage_2012")]
-        public string TeacherAttendancePercentage2012 { get; set; }
-
         [JsonProperty("x_coordinate")]
         public string XCoordinate { get; set; }
 
@@ -126,12 +126,12 @@ namespace ElementarySchoolResponse
 
     public partial class ElementarySchool
     {
-        public static ElementarySchool FromJson(string json) => JsonConvert.DeserializeObject<ElementarySchool>(json, ElementarySchoolResponse.Converter.Settings);
+        public static List<ElementarySchool> FromJson(string json) => JsonConvert.DeserializeObject<List<ElementarySchool>>(json, ElementarySchoolResponse.Converter.Settings);
     }
 
     public static class Serialize
     {
-        public static string ToJson(this ElementarySchool self) => JsonConvert.SerializeObject(self, ElementarySchoolResponse.Converter.Settings);
+        public static string ToJson(this List<ElementarySchool> self) => JsonConvert.SerializeObject(self, ElementarySchoolResponse.Converter.Settings);
     }
 
     internal static class Converter

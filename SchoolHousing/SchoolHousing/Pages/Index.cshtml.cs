@@ -14,15 +14,13 @@ public class IndexModel : PageModel
     {
         using (var webClient = new WebClient())
         {
-            string schoolString = webClient.DownloadString("https://data.cityofchicago.org/Education/Chicago-Public-Schools-Elementary-School-Progress-/tj8h-mnuv/data");
+            string schoolString = webClient.DownloadString("https://data.cityofchicago.org/resource/tj8h-mnuv.json");
             var schoolData = ElementarySchool.FromJson(schoolString);
             ViewData["ElementarySchool"] = schoolData;
-        }
-        using (var webClient = new WebClient())
-        {
-            string houseString = webClient.DownloadString("https://data.cityofchicago.org/Community-Economic-Development/Affordable-Rental-Housing-Developments/s6ha-ppgi/data");
-            var houseData = AffordableHouse.FromJson(houseString);
-            ViewData["AffordableHouse"] = houseData;
+
+            //string houseString = webClient.DownloadString("https://data.cityofchicago.org/resource/s6ha-ppgi.json");
+            //var houseData = AffordableHouse.FromJson(houseString);
+            //ViewData["AffordableHouse"] = houseData;
         }
     }
 }
