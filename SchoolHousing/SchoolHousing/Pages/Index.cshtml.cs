@@ -10,17 +10,25 @@ using AffordableHouseResponse;
 using ElementarySchoolResponse;
 public class IndexModel : PageModel
 {
-    public void OnGet()
+    public JsonResult OnGet()
+    {
+            string schoolString = getJsonString("https://data.cityofchicago.org/resource/tj8h-mnuv.json");
+            var schoolData = ElementarySchool.FromJson(schoolString);
+          
+
+            string houseString = getJsonString("https://data.cityofchicago.org/resource/s6ha-ppgi.json");
+            var houseData = AffordableHouse.FromJson(houseString);
+           
+
+        return new JsonResult(schoolData);
+
+    }
+
+    private string getJsonString(String url)
     {
         using (var webClient = new WebClient())
         {
-            string schoolString = webClient.DownloadString("https://data.cityofchicago.org/resource/tj8h-mnuv.json");
-            var schoolData = ElementarySchool.FromJson(schoolString);
-            ViewData["ElementarySchool"] = schoolData;
-
-            string houseString = webClient.DownloadString("https://data.cityofchicago.org/resource/s6ha-ppgi.json");
-            var houseData = AffordableHouse.FromJson(houseString);
-            ViewData["AffordableHouse"] = houseData;
+           return webClient.DownloadString(url);
         }
     }
 }
