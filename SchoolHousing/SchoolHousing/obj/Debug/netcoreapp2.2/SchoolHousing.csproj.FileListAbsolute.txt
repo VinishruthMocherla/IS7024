@@ -126,3 +126,33 @@ C:\Users\Vinishruth Mocherla\Documents\GitHub\IS7024\SchoolHousing\SchoolHousing
 C:\Users\Vinishruth Mocherla\Documents\GitHub\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.RazorTargetAssemblyInfo.cs
 C:\Users\Vinishruth Mocherla\Documents\GitHub\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.Views.pdb
 C:\Users\Vinishruth Mocherla\Documents\GitHub\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.csproj.CopyComplete
+C:\Tanmay\UC Courses and Assignments\Web Development with .NET\IS7024\SchoolHousing\SchoolHousing\bin\Debug\netcoreapp2.2\SchoolHousing.deps.json
+C:\Tanmay\UC Courses and Assignments\Web Development with .NET\IS7024\SchoolHousing\SchoolHousing\bin\Debug\netcoreapp2.2\SchoolHousing.runtimeconfig.json
+C:\Tanmay\UC Courses and Assignments\Web Development with .NET\IS7024\SchoolHousing\SchoolHousing\bin\Debug\netcoreapp2.2\SchoolHousing.runtimeconfig.dev.json
+C:\Tanmay\UC Courses and Assignments\Web Development with .NET\IS7024\SchoolHousing\SchoolHousing\bin\Debug\netcoreapp2.2\SchoolHousing.dll
+C:\Tanmay\UC Courses and Assignments\Web Development with .NET\IS7024\SchoolHousing\SchoolHousing\bin\Debug\netcoreapp2.2\SchoolHousing.pdb
+C:\Tanmay\UC Courses and Assignments\Web Development with .NET\IS7024\SchoolHousing\SchoolHousing\bin\Debug\netcoreapp2.2\SchoolHousing.Views.dll
+C:\Tanmay\UC Courses and Assignments\Web Development with .NET\IS7024\SchoolHousing\SchoolHousing\bin\Debug\netcoreapp2.2\SchoolHousing.Views.pdb
+C:\Tanmay\UC Courses and Assignments\Web Development with .NET\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.csprojAssemblyReference.cache
+C:\Tanmay\UC Courses and Assignments\Web Development with .NET\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.csproj.CoreCompileInputs.cache
+C:\Tanmay\UC Courses and Assignments\Web Development with .NET\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.RazorAssemblyInfo.cache
+C:\Tanmay\UC Courses and Assignments\Web Development with .NET\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.RazorAssemblyInfo.cs
+C:\Tanmay\UC Courses and Assignments\Web Development with .NET\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.AssemblyInfoInputs.cache
+C:\Tanmay\UC Courses and Assignments\Web Development with .NET\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.AssemblyInfo.cs
+C:\Tanmay\UC Courses and Assignments\Web Development with .NET\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.TagHelpers.input.cache
+C:\Tanmay\UC Courses and Assignments\Web Development with .NET\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.TagHelpers.output.cache
+C:\Tanmay\UC Courses and Assignments\Web Development with .NET\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.RazorCoreGenerate.cache
+C:\Tanmay\UC Courses and Assignments\Web Development with .NET\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\Razor\Pages\Error.g.cshtml.cs
+C:\Tanmay\UC Courses and Assignments\Web Development with .NET\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\Razor\Pages\Index.g.cshtml.cs
+C:\Tanmay\UC Courses and Assignments\Web Development with .NET\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\Razor\Pages\Privacy.g.cshtml.cs
+C:\Tanmay\UC Courses and Assignments\Web Development with .NET\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Tanmay\UC Courses and Assignments\Web Development with .NET\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_Layout.g.cshtml.cs
+C:\Tanmay\UC Courses and Assignments\Web Development with .NET\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Tanmay\UC Courses and Assignments\Web Development with .NET\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\Razor\Pages\_ViewImports.g.cshtml.cs
+C:\Tanmay\UC Courses and Assignments\Web Development with .NET\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\Razor\Pages\_ViewStart.g.cshtml.cs
+C:\Tanmay\UC Courses and Assignments\Web Development with .NET\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.RazorTargetAssemblyInfo.cache
+C:\Tanmay\UC Courses and Assignments\Web Development with .NET\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.RazorTargetAssemblyInfo.cs
+C:\Tanmay\UC Courses and Assignments\Web Development with .NET\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.Views.pdb
+C:\Tanmay\UC Courses and Assignments\Web Development with .NET\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.dll
+C:\Tanmay\UC Courses and Assignments\Web Development with .NET\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.pdb
+C:\Tanmay\UC Courses and Assignments\Web Development with .NET\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.csproj.CopyComplete

@@ -9,11 +9,15 @@
 
 <h1 class="display-4">Affordable Houses near good elementary schools!</h1>
 <div class="text-center">
-    <h1 class="display-4">List of Houses</h1>
-    <table>
+    <h2 class="display-4">List of Houses</h2>
+
+    <table class="table table-bordered table-striped">
         <tr>
             <th>Community Area Number</th>
             <th>Community Area</th>
+            <th>Property Name</th>
+            <th>Address</th>
+            <th>Zip Code</th>
         </tr>
         @{
             foreach (AffordableHouseResponse.AffordableHouse house in houseData)
@@ -21,6 +25,9 @@
                 <tr>
                     <td>@house.CommunityAreaNumber</td>
                     <td>@house.CommunityArea</td>
+                    <td>@house.PropertyName</td>
+                    <td>@house.Address</td>
+                    <td>@house.ZipCode</td>
                 </tr>
             }
         }
@@ -28,20 +35,25 @@
     </table>
 </div>
 
-<h1 class="display-4">Affordable Houses near good elementary schools!</h1>
 <div class="text-center">
-    <h1 class="display-4">List of schools</h1>
-    <table>
+    <h2 class="display-4">List of schools</h2>
+    <table class="table table-bordered table-striped">
         <tr>
             <th>School ID</th>
             <th>Name of School</th>
+            <th>Address</th>
+            <th>Zip Code</th>
+            <th>Quality of Facilities</th>
         </tr>
         @{
-            foreach ( ElementarySchoolResponse.ElementarySchool school in schoolData)
+            foreach (ElementarySchoolResponse.ElementarySchool school in schoolData)
             {
                 <tr>
                     <td>@school.SchoolId</td>
                     <td>@school.NameOfSchool</td>
+                    <td>@school.StreetAddress</td>
+                    <td>@school.ZipCode</td>
+                    <td>@school.QualityOfFacilities</td>
                 </tr>
             }
         }

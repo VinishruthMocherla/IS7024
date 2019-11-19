@@ -12079,23 +12079,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Vinishruth Mocherla\\.nuget\\packages\\": {},
+    "C:\\Users\\tanma\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vinishruth Mocherla\\Documents\\GitHub\\IS7024\\SchoolHousing\\SchoolHousing\\SchoolHousing.csproj",
+      "projectUniqueName": "C:\\Tanmay\\UC Courses and Assignments\\Web Development with .NET\\IS7024\\SchoolHousing\\SchoolHousing\\SchoolHousing.csproj",
       "projectName": "SchoolHousing",
-      "projectPath": "C:\\Users\\Vinishruth Mocherla\\Documents\\GitHub\\IS7024\\SchoolHousing\\SchoolHousing\\SchoolHousing.csproj",
-      "packagesPath": "C:\\Users\\Vinishruth Mocherla\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vinishruth Mocherla\\Documents\\GitHub\\IS7024\\SchoolHousing\\SchoolHousing\\obj\\",
+      "projectPath": "C:\\Tanmay\\UC Courses and Assignments\\Web Development with .NET\\IS7024\\SchoolHousing\\SchoolHousing\\SchoolHousing.csproj",
+      "packagesPath": "C:\\Users\\tanma\\.nuget\\packages\\",
+      "outputPath": "C:\\Tanmay\\UC Courses and Assignments\\Web Development with .NET\\IS7024\\SchoolHousing\\SchoolHousing\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Vinishruth Mocherla\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tanma\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
