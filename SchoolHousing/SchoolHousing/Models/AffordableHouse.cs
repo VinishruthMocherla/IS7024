@@ -10,7 +10,7 @@ namespace AffordableHouseResponse
 {
     using System;
     using System.Collections.Generic;
-
+   
     using System.Globalization;
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
@@ -18,7 +18,7 @@ namespace AffordableHouseResponse
     public partial class AffordableHouse
     {
         [JsonProperty("community_area", NullValueHandling = NullValueHandling.Ignore)]
-        public string CommunityArea { get; set; }
+                public string CommunityArea { get; set; }
 
         [JsonProperty("community_area_number", NullValueHandling = NullValueHandling.Ignore)]
         [JsonConverter(typeof(ParseStringConverter))]
