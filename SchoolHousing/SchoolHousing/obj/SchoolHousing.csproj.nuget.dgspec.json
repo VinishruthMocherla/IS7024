@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Tanmay\\UC Courses and Assignments\\Web Development with .NET\\IS7024\\SchoolHousing\\SchoolHousing\\SchoolHousing.csproj": {}
+    "C:\\Users\\HP\\Source\\Repos\\IS70242\\SchoolHousing\\SchoolHousing\\SchoolHousing.csproj": {}
   },
   "projects": {
-    "C:\\Tanmay\\UC Courses and Assignments\\Web Development with .NET\\IS7024\\SchoolHousing\\SchoolHousing\\SchoolHousing.csproj": {
+    "C:\\Users\\HP\\Source\\Repos\\IS70242\\SchoolHousing\\SchoolHousing\\SchoolHousing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Tanmay\\UC Courses and Assignments\\Web Development with .NET\\IS7024\\SchoolHousing\\SchoolHousing\\SchoolHousing.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Source\\Repos\\IS70242\\SchoolHousing\\SchoolHousing\\SchoolHousing.csproj",
         "projectName": "SchoolHousing",
-        "projectPath": "C:\\Tanmay\\UC Courses and Assignments\\Web Development with .NET\\IS7024\\SchoolHousing\\SchoolHousing\\SchoolHousing.csproj",
-        "packagesPath": "C:\\Users\\tanma\\.nuget\\packages\\",
-        "outputPath": "C:\\Tanmay\\UC Courses and Assignments\\Web Development with .NET\\IS7024\\SchoolHousing\\SchoolHousing\\obj\\",
+        "projectPath": "C:\\Users\\HP\\Source\\Repos\\IS70242\\SchoolHousing\\SchoolHousing\\SchoolHousing.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\Source\\Repos\\IS70242\\SchoolHousing\\SchoolHousing\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\tanma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
