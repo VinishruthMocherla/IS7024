@@ -1,0 +1,167 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/ElementarySchoolElement"
+  },
+  "definitions": {
+    "ElementarySchoolElement": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "school_id": {
+          "type": "string",
+          "format": "integer"
+        },
+        "name_of_school": {
+          "type": "string"
+        },
+        "street_address": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "zip_code": {
+          "type": "string",
+          "format": "integer"
+        },
+        "phone_number": {
+          "type": "string"
+        },
+        "website": {
+          "type": "string",
+          "format": "uri",
+          "qt-uri-protocols": [
+            "http"
+          ]
+        },
+        "cps_performance_policy_level": {
+          "type": "string"
+        },
+        "cps_performance_policy_status": {
+          "type": "string"
+        },
+        "my_voice_my_school_overall_rating": {
+          "type": "string"
+        },
+        "student_response_rate": {
+          "type": "string",
+          "format": "integer"
+        },
+        "teacher_response_rate": {
+          "type": "string",
+          "format": "integer"
+        },
+        "involved_family": {
+          "type": "string"
+        },
+        "supportive_environment": {
+          "type": "string"
+        },
+        "ambitious_instruction": {
+          "type": "string"
+        },
+        "effective_leaders": {
+          "type": "string"
+        },
+        "collaborative_teachers": {
+          "type": "string"
+        },
+        "safe": {
+          "type": "string"
+        },
+        "school_community": {
+          "type": "string"
+        },
+        "parent_teacher_partnership": {
+          "type": "string"
+        },
+        "quality_of_facilities": {
+          "type": "string"
+        },
+        "healthy_schools_certification": {
+          "type": "string"
+        },
+        "creative_schools]_certification": {
+          "type": "string"
+        },
+        "student_attendance_percentage_2013": {
+          "type": "string"
+        },
+        "student_attendance_percentage_2012": {
+          "type": "string"
+        },
+        "x_coordinate": {
+          "type": "string"
+        },
+        "y_coordinate": {
+          "type": "string"
+        },
+        "longitude": {
+          "type": "string"
+        },
+        "latitude": {
+          "type": "string"
+        },
+        "location": {
+          "$ref": "#/definitions/Location"
+        }
+      },
+      "required": [
+       // "ambitious_instruction",
+        "city",
+        //"collaborative_teachers",
+       // "cps_performance_policy_level",
+        //"cps_performance_policy_status",
+        //"creative_schools]_certification",
+        //"effective_leaders",
+        //"healthy_schools_certification",
+        //"involved_family",
+        "latitude",
+        "location",
+        "longitude",
+        //"my_voice_my_school_overall_rating",
+        "name_of_school",
+        //"parent_teacher_partnership",
+        //"phone_number",
+        //"quality_of_facilities",
+        //"safe",
+        //"school_community",
+        //"school_id",
+        //"state",
+        //"street_address",
+        //"student_attendance_percentage_2012",
+        //"student_attendance_percentage_2013",
+        //"student_response_rate",
+        //"supportive_environment",
+        //"teacher_response_rate",
+        //"website",
+        //"x_coordinate",
+        //"y_coordinate",
+        //"zip_code"
+      ],
+      "title": "ElementarySchoolElement"
+    },
+    "Location": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "latitude": {
+          "type": "string"
+        },
+        "longitude": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "latitude",
+        "longitude"
+      ],
+      "title": "Location"
+    }
+  }
+}

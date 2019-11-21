@@ -17,6 +17,11 @@ namespace ElementarySchoolResponse
 
     public partial class ElementarySchool
     {
+        [JsonProperty("elementarySchool")]
+        public List<ElementarySchool> Schools { get; set; }
+    }
+    public partial class ElementarySchool
+    {
         [JsonProperty("school_id", NullValueHandling = NullValueHandling.Ignore)]
         [JsonConverter(typeof(ParseStringConverter))]
         public long? SchoolId { get; set; }
@@ -35,7 +40,7 @@ namespace ElementarySchoolResponse
 
         [JsonProperty("zip_code", NullValueHandling = NullValueHandling.Ignore)]
         [JsonConverter(typeof(ParseStringConverter))]
-        public long? ZipCode { get; set; }
+        public long ZipCode { get; set; }
 
         [JsonProperty("phone_number", NullValueHandling = NullValueHandling.Ignore)]
         public string PhoneNumber { get; set; }
@@ -227,48 +232,6 @@ namespace ElementarySchoolResponse
         [JsonProperty("average_length_of_suspension_2012", NullValueHandling = NullValueHandling.Ignore)]
         public string AverageLengthOfSuspension2012 { get; set; }
 
-        [JsonProperty("probation_length", NullValueHandling = NullValueHandling.Ignore)]
-        [JsonConverter(typeof(ParseStringConverter))]
-        public long? ProbationLength { get; set; }
-
-        [JsonProperty("nwea_reading_growth_percentile_grade_7", NullValueHandling = NullValueHandling.Ignore)]
-        [JsonConverter(typeof(ParseStringConverter))]
-        public long? NweaReadingGrowthPercentileGrade7 { get; set; }
-
-        [JsonProperty("nwea_reading_growth_percentile_grade_8", NullValueHandling = NullValueHandling.Ignore)]
-        [JsonConverter(typeof(ParseStringConverter))]
-        public long? NweaReadingGrowthPercentileGrade8 { get; set; }
-
-        [JsonProperty("nwea_math_growth_percentile_grade_7", NullValueHandling = NullValueHandling.Ignore)]
-        [JsonConverter(typeof(ParseStringConverter))]
-        public long? NweaMathGrowthPercentileGrade7 { get; set; }
-
-        [JsonProperty("nwea_math_growth_percentile_grade_8", NullValueHandling = NullValueHandling.Ignore)]
-        [JsonConverter(typeof(ParseStringConverter))]
-        public long? NweaMathGrowthPercentileGrade8 { get; set; }
-
-        [JsonProperty("nwea_reading_attainment_percentile_grade_7", NullValueHandling = NullValueHandling.Ignore)]
-        [JsonConverter(typeof(ParseStringConverter))]
-        public long? NweaReadingAttainmentPercentileGrade7 { get; set; }
-
-        [JsonProperty("nwea_reading_attainment_percentile_grade_8", NullValueHandling = NullValueHandling.Ignore)]
-        [JsonConverter(typeof(ParseStringConverter))]
-        public long? NweaReadingAttainmentPercentileGrade8 { get; set; }
-
-        [JsonProperty("nwea_math_attainment_percentile_grade_7", NullValueHandling = NullValueHandling.Ignore)]
-        [JsonConverter(typeof(ParseStringConverter))]
-        public long? NweaMathAttainmentPercentileGrade7 { get; set; }
-
-        [JsonProperty("nwea_math_attainment_percentile_grade_8", NullValueHandling = NullValueHandling.Ignore)]
-        [JsonConverter(typeof(ParseStringConverter))]
-        public long? NweaMathAttainmentPercentileGrade8 { get; set; }
-
-        [JsonProperty("one_year_drop_out_rate_percentage_2013", NullValueHandling = NullValueHandling.Ignore)]
-        public string OneYearDropOutRatePercentage2013 { get; set; }
-
-        [JsonProperty("blue_ribbon_award", NullValueHandling = NullValueHandling.Ignore)]
-        [JsonConverter(typeof(ParseStringConverter))]
-        public long? BlueRibbonAward { get; set; }
     }
 
     public partial class Location
