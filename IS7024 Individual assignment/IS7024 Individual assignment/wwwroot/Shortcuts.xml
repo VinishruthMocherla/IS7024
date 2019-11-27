@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="Shortcuts.xsl"?>
+<users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="Shortcuts.xsd">
+  <!-- All payload data belongs here -->
+  <user>
+    <firstname>Vinishruth</firstname>
+    <lastname>Mocherla</lastname>
+    <bearcatid>M13262253</bearcatid>
+    <favoriteshortcut>Ctrl+Shift+N</favoriteshortcut>
+  </user>
+  <user>
+    <firstname>Harsh</firstname>
+    <lastname>Dave</lastname>
+    <bearcatid>M132622xx</bearcatid>
+    <favoriteshortcut>Ctrl+A</favoriteshortcut>
+  </user>
+  <user>
+    <firstname>Tanmay</firstname>
+    <lastname>Jog</lastname>
+    <bearcatid>M132622xx</bearcatid>
+    <favoriteshortcut>Ctrl+Alt+Delete</favoriteshortcut>
+  </user>
+  <user>
+    <firstname>Neha</firstname>
+    <lastname>Ghanshani</lastname>
+    <bearcatid>M132622xx</bearcatid>
+    <favoriteshortcut>Ctrl+X</favoriteshortcut>
+  </user>
+</users>

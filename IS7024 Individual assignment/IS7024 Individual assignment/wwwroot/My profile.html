@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>My Profile</title>
+    <link rel="stylesheet" href="css/Styles.css" type="text/css" />
+    <link rel="stylesheet" media="Screen and  (max-width: 480px)" href="css/Mobile.css" type="text/css" />
+    <link rel="stylesheet" media="Print" href="css/Print.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script>
+        $(function () {
+            $("#Combined_Name").autocomplete({
+                source: ["IT Management", "XML & Web services", "Data Modeling", "Database Design",],
+                minLength: 2
+            });
+        });
+    </script>
+    <style>
+        ul.ui-autocomplete {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            list-style-position: inside;
+            width: 50px;
+        }
+
+        li.ui-menu-item {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body style="margin-left:16px; margin-right:16px">
+    <div id="topnav">
+        <h1 class="text-center">My Profile</h1>
+    </div>
+    <div id="content">
+        <em>Courses registered for Fall semester</em>
+        <form action="https://canopy.uc.edu/webapps/login/?action=relogin" method="get">
+            <label for="Combined_Name">Course</label>
+            <input name="Combined_Name" type="text" placeholder="Enter course name" id="Combined_Name" />
+            <input type="submit" value="Submit" />
+        </form>
+
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2>Vinishruth Mocherla</h2>
+                    <h3>Graduate Student at UC|<em>MS-IS program</em></h3>
+                    <label>About me:</label>
+                    <p>
+                        Ambitious by nature with a rock steady will power and confidence.Focused, diligent and have a strong sense of responsibility to strive hard to do my best.
+                    </p>
+                    Like to watch movies and party during the weekends
+                    <p>
+
+                        <br />
+                    <p><em>For LinkedIn profile, please click <a href="https://www.linkedin.com/in/vinishruth-mocherla">here</a></em></p>
+                </div>
+                <div class="col-sm-3" style="text-align:right">
+                    <img src="https://i.ibb.co/XbNJ3y1/190820y-LCOB-Grad0189-1.jpg" alt="Image of Vinishruth" height="200" width="150" />
+                    <br />
+                    <br />
+                </div>
+                <br />
+            </div>
+            <div>
+                <hr />
+                <h3 style="background-color:gray">Education</h3>
+                <table class="table table-bordered table-striped">
+                    <thead style="background-color:Highlight">
+                        <tr>
+                            <th>Degree</th>
+                            <th>University</th>
+                            <th>Degree duration</th>
+                            <th>GPA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Master's in Information Systems</td>
+                            <td>University of  Cincinnati</td>
+                            <td>2019 to Present</td>
+                            <td>3.73</td>
+                        </tr>
+                        <tr>
+                            <td>Bachelor's in Engineering</td>
+                            <td>Osmania University</td>
+                            <td>2012 to 2016</td>
+                            <td>3.53</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div>
+                <h3 style="background-color:gray">Hobbies</h3>
+                <ul>
+                    <li>Cooking</li>
+                    <li>Reading</li>
+                    <li>Playing video games</li>
+                </ul>
+            </div>
+     </div>
+</body>
+</html>
