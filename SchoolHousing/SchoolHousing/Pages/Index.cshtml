@@ -5,58 +5,54 @@
     var houseData = (AffordableHouseResponse.AffordableHouse[])ViewData["AffordableHouse"];
     var schoolData = (ElementarySchoolResponse.ElementarySchool[])ViewData["ElementarySchool"];
 }
-
-
-<h1 class="display-4">Affordable Houses near good elementary schools!</h1>
 <div class="text-center">
-    <h2 class="display-4">List of Houses</h2>
-
-    <table class="table table-bordered table-striped">
+    <h1 class="display-4">Welcome</h1>
+    <h2 class="display-4">Affordable Houses near good elementary schools!</h2>
+    <hr />
+    <table class="table-bordered table-info">
         <tr>
-            <th>Community Area Number</th>
-            <th>Community Area</th>
-            <th>Property Name</th>
-            <th>Address</th>
-            <th>Zip Code</th>
+            <th>
+                Community Area Number
+            </th>
+            <th>
+                Community Area
+            </th>
+            <th>
+                Property Name
+            </th>
+            <th>
+                Address
+            </th>
+            <th>
+                Zip Code
+            </th>
+            <th>
+                Name of School in same locality
+            </th>
         </tr>
-        @{
-            foreach (AffordableHouseResponse.AffordableHouse house in houseData)
-            {
-                <tr>
-                    <td>@house.CommunityAreaNumber</td>
-                    <td>@house.CommunityArea</td>
-                    <td>@house.PropertyName</td>
-                    <td>@house.Address</td>
-                    <td>@house.ZipCode</td>
-                </tr>
-            }
+
+        @foreach (AffordableHouseResponse.AffordableHouse house in houseData)
+        {
+            <tr>
+                <td>@house.CommunityAreaNumber</td>
+                <td>@house.CommunityArea</td>
+                <td>@house.PropertyName</td>
+                <td>@house.Address</td>
+                <td>@house.ZipCode</td>
+                <td>
+                    @{
+                        foreach (ElementarySchoolResponse.ElementarySchool school in schoolData)
+                        {
+                            if (school.ZipCode == house.ZipCode)
+                            {
+
+                                @school.NameOfSchool
+                                <hr />
+                            }
+                        }
+                    }
+                </td>
+            </tr>
         }
-
-    </table>
-</div>
-
-<div class="text-center">
-    <h2 class="display-4">List of schools</h2>
-    <table class="table table-bordered table-striped">
-        <tr>
-            <th>School ID</th>
-            <th>Name of School</th>
-            <th>Address</th>
-            <th>Zip Code</th>
-            <th>Quality of Facilities</th>
-        </tr>
-        @{
-            foreach (ElementarySchoolResponse.ElementarySchool school in schoolData)
-            {
-                <tr>
-                    <td>@school.SchoolId</td>
-                    <td>@school.NameOfSchool</td>
-                    <td>@school.StreetAddress</td>
-                    <td>@school.ZipCode</td>
-                    <td>@school.QualityOfFacilities</td>
-                </tr>
-            }
-        }
-
     </table>
 </div>

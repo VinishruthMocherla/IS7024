@@ -35,7 +35,7 @@ namespace AffordableHouseResponse
 
         [JsonProperty("zip_code", NullValueHandling = NullValueHandling.Ignore)]
         [JsonConverter(typeof(ParseStringConverter))]
-        public long? ZipCode { get; set; }
+        public long ZipCode { get; set; }
 
         [JsonProperty("phone_number", NullValueHandling = NullValueHandling.Ignore)]
         public string PhoneNumber { get; set; }
