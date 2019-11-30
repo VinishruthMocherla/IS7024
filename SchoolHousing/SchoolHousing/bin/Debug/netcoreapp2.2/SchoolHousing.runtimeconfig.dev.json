@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\tanma\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\tanma\\.nuget\\packages",
+      "C:\\Users\\keyas\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\keyas\\.nuget\\packages",
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ]
   }

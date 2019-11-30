@@ -156,3 +156,35 @@ C:\Tanmay\UC Courses and Assignments\Web Development with .NET\IS7024\SchoolHous
 C:\Tanmay\UC Courses and Assignments\Web Development with .NET\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.dll
 C:\Tanmay\UC Courses and Assignments\Web Development with .NET\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.pdb
 C:\Tanmay\UC Courses and Assignments\Web Development with .NET\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.csproj.CopyComplete
+C:\Users\keyas\Source\Repos\IS7024\SchoolHousing\SchoolHousing\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\keyas\Source\Repos\IS7024\SchoolHousing\SchoolHousing\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\keyas\Source\Repos\IS7024\SchoolHousing\SchoolHousing\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\keyas\Source\Repos\IS7024\SchoolHousing\SchoolHousing\bin\Debug\netcoreapp2.2\SchoolHousing.deps.json
+C:\Users\keyas\Source\Repos\IS7024\SchoolHousing\SchoolHousing\bin\Debug\netcoreapp2.2\SchoolHousing.runtimeconfig.json
+C:\Users\keyas\Source\Repos\IS7024\SchoolHousing\SchoolHousing\bin\Debug\netcoreapp2.2\SchoolHousing.runtimeconfig.dev.json
+C:\Users\keyas\Source\Repos\IS7024\SchoolHousing\SchoolHousing\bin\Debug\netcoreapp2.2\SchoolHousing.dll
+C:\Users\keyas\Source\Repos\IS7024\SchoolHousing\SchoolHousing\bin\Debug\netcoreapp2.2\SchoolHousing.pdb
+C:\Users\keyas\Source\Repos\IS7024\SchoolHousing\SchoolHousing\bin\Debug\netcoreapp2.2\SchoolHousing.Views.dll
+C:\Users\keyas\Source\Repos\IS7024\SchoolHousing\SchoolHousing\bin\Debug\netcoreapp2.2\SchoolHousing.Views.pdb
+C:\Users\keyas\Source\Repos\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.csprojAssemblyReference.cache
+C:\Users\keyas\Source\Repos\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.RazorAssemblyInfo.cache
+C:\Users\keyas\Source\Repos\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.RazorAssemblyInfo.cs
+C:\Users\keyas\Source\Repos\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.AssemblyInfoInputs.cache
+C:\Users\keyas\Source\Repos\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.AssemblyInfo.cs
+C:\Users\keyas\Source\Repos\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.TagHelpers.input.cache
+C:\Users\keyas\Source\Repos\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.TagHelpers.output.cache
+C:\Users\keyas\Source\Repos\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.RazorCoreGenerate.cache
+C:\Users\keyas\Source\Repos\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\Razor\Pages\Error.cshtml.g.cs
+C:\Users\keyas\Source\Repos\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\Razor\Pages\Index.cshtml.g.cs
+C:\Users\keyas\Source\Repos\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\Razor\Pages\Privacy.cshtml.g.cs
+C:\Users\keyas\Source\Repos\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\keyas\Source\Repos\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_Layout.cshtml.g.cs
+C:\Users\keyas\Source\Repos\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\keyas\Source\Repos\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\keyas\Source\Repos\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\keyas\Source\Repos\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.RazorTargetAssemblyInfo.cache
+C:\Users\keyas\Source\Repos\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.RazorTargetAssemblyInfo.cs
+C:\Users\keyas\Source\Repos\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.Views.pdb
+C:\Users\keyas\Source\Repos\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.dll
+C:\Users\keyas\Source\Repos\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.pdb
+C:\Users\keyas\Source\Repos\IS7024\SchoolHousing\SchoolHousing\obj\Debug\netcoreapp2.2\SchoolHousing.csproj.CopyComplete
