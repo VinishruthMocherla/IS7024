@@ -9,7 +9,6 @@
 namespace ElementarySchoolResponse
 {
     using System;
-    using System.Collections.Generic;
 
     using System.Globalization;
     using Newtonsoft.Json;

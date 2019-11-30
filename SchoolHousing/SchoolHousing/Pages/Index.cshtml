@@ -6,34 +6,63 @@
     var schoolData = (ElementarySchoolResponse.ElementarySchool[])ViewData["ElementarySchool"];
 }
 
-
-<h1 class="display-4">Affordable Houses near good elementary schools!</h1>
-<div class="text-center">
-    <h2 class="display-4">List of Houses</h2>
-
-    <table class="table table-bordered table-striped">
-        <tr>
-            <th>Community Area Number</th>
-            <th>Community Area</th>
-            <th>Property Name</th>
-            <th>Address</th>
-            <th>Zip Code</th>
-        </tr>
-        @{
-            foreach (AffordableHouseResponse.AffordableHouse house in houseData)
-            {
-                <tr>
-                    <td>@house.CommunityAreaNumber</td>
-                    <td>@house.CommunityArea</td>
-                    <td>@house.PropertyName</td>
-                    <td>@house.Address</td>
-                    <td>@house.ZipCode</td>
-                </tr>
+    <html>
+    <head>
+        <style>
+            body {
+                background-image: url("https://desktopwalls.net/wp-content/uploads/2014/07/Chicago%20Colorful%20Skyline%20View%20Desktop%20Wallpaper.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
             }
-        }
+        </style>
+    </head>
+    </html>
 
-    </table>
-</div>
+
+
+    <div class="text-center">
+        <br />
+        <h2 class="display-4">List of Affordable Houses</h2>
+
+        <style>
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            th, td {
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+        </style>
+
+        <table class="table table-bordered table-striped">
+            <tr>
+                <th>Community Area Number</th>
+                <th>Community Area</th>
+                <th>Property Name</th>
+                <th>Address</th>
+                <th>Zip Code</th>
+            </tr>
+            @{
+                foreach (AffordableHouseResponse.AffordableHouse house in houseData)
+                {
+                    <tr>
+                        <td>@house.CommunityAreaNumber</td>
+                        <td>@house.CommunityArea</td>
+                        <td>@house.PropertyName</td>
+                        <td>@house.Address</td>
+                        <td>@house.ZipCode</td>
+                    </tr>
+                }
+            }
+
+        </table>
+    </div>
 
 <div class="text-center">
     <h2 class="display-4">List of schools</h2>
