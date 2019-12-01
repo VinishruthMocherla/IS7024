@@ -1,0 +1,60 @@
+﻿@page
+@model SchoolHousing.Pages.SearchByZipModel
+@{
+    ViewData["Title"] = "SearchByZip";
+    List<AffordableHouseResponse.AffordableHouse> houseList = (List<AffordableHouseResponse.AffordableHouse>)ViewData["Houses"];
+    ElementarySchoolResponse.ElementarySchool schoolList = (ElementarySchoolResponse.ElementarySchool)ViewData["School"];
+}
+
+<h1>SearchByZip</h1>
+<form action="" method="POST">
+    <div class="form-group">
+        <label class="control-label" for="search"><strong></strong></label>
+        <input type="text" class="form-control" name="search" id="search" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Enter Zipcode" class="btn btn-danger" />
+    </div>
+</form>
+@if (Model.SearchCompleted)
+{
+    <div class="text-center">
+        <h4>@schoolList.NameOfSchool</h4>
+        <br />
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+
+                    <th>Community Area</th>
+                    <th>Property Name</th>
+                    <th>Address</th>
+                    <th>Zip Code</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (houseList.Count > 0)
+                {
+                    @foreach (AffordableHouseResponse.AffordableHouse house in houseList)
+                    {
+                        <tr>
+                            <td>@house.CommunityArea</td>
+                            <td>@house.PropertyName</td>
+                            <td>@house.Address</td>
+                            <td>@house.ZipCode</td>
+                        </tr>
+                    }
+                }
+                }
+                else
+                {
+                <tr class="danger">
+                    <td colspan="4" class="text-center">
+                        No results found for term "@Model.Search"
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+        <br />
+    </div>
+}
