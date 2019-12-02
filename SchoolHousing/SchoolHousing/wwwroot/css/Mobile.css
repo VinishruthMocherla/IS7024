@@ -1,15 +1,15 @@
 ﻿body {
-    background-color: #FFD899;
+    background-color: #F5F5F5;
 }
 
 #topnav {
-    background-color: deepskyblue;
+    background-color: lightgrey;
     margin-top: 0px;
     position: fixed;
     vertical-align: top;
     left: 0;
     top: 0;
-    height: 4em;
+    height: 5em;
     width: 100%;
     z-index: 100;
 }

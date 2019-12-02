@@ -1,9 +1,9 @@
 ﻿body {
-    background-color: #FFD899;
+    background-color: #F5F5F5;
 }
 
 #topnav {
-    background-color: deepskyblue;
+    background-color: lightgrey;
     margin-top: 0px;
     position: fixed;
     vertical-align: top;
