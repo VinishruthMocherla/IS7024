@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Tanmay\\UC Courses and Assignments\\Web Development with .NET\\IS7024\\SchoolHousing\\SchoolHousing\\SchoolHousing.csproj": {}
+    "C:\\Users\\harsh\\source\\repos\\harshdave-1995\\IS7024\\SchoolHousing\\SchoolHousing\\SchoolHousing.csproj": {}
   },
   "projects": {
-    "C:\\Tanmay\\UC Courses and Assignments\\Web Development with .NET\\IS7024\\SchoolHousing\\SchoolHousing\\SchoolHousing.csproj": {
+    "C:\\Users\\harsh\\source\\repos\\harshdave-1995\\IS7024\\SchoolHousing\\SchoolHousing\\SchoolHousing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Tanmay\\UC Courses and Assignments\\Web Development with .NET\\IS7024\\SchoolHousing\\SchoolHousing\\SchoolHousing.csproj",
+        "projectUniqueName": "C:\\Users\\harsh\\source\\repos\\harshdave-1995\\IS7024\\SchoolHousing\\SchoolHousing\\SchoolHousing.csproj",
         "projectName": "SchoolHousing",
-        "projectPath": "C:\\Tanmay\\UC Courses and Assignments\\Web Development with .NET\\IS7024\\SchoolHousing\\SchoolHousing\\SchoolHousing.csproj",
-        "packagesPath": "C:\\Users\\tanma\\.nuget\\packages\\",
-        "outputPath": "C:\\Tanmay\\UC Courses and Assignments\\Web Development with .NET\\IS7024\\SchoolHousing\\SchoolHousing\\obj\\",
+        "projectPath": "C:\\Users\\harsh\\source\\repos\\harshdave-1995\\IS7024\\SchoolHousing\\SchoolHousing\\SchoolHousing.csproj",
+        "packagesPath": "C:\\Users\\harsh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\harsh\\source\\repos\\harshdave-1995\\IS7024\\SchoolHousing\\SchoolHousing\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\tanma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\harsh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,16 +58,26 @@
               "version": "[2.2.0, )",
               "autoReferenced": true
             },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[12.0.3, )"
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
