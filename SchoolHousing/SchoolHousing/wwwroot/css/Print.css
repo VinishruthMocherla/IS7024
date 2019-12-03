@@ -1,6 +1,8 @@
 ﻿body {
     background-color: #FFFFFF;
 }
-.nomobile {
-    display: none;
+
+.no-print {
+    display : none
 }
+
