@@ -7,21 +7,23 @@
 <!DOCTYPE html>
 
 <div class="text-center">
-    <h2 class="display-4">House Details in Washington Comunity Area </h2>
+    <h4 class="display-4">Housing Details in Washington Park Area </h4>
 
-    <table class="table table-bordered table-striped">
-        <tr>
-           
-            <th>Management Comapany</th>
-            <th>Property Phone Number</th>
-            <th>Address</th>
-            <th>Zip Code</th>
-        </tr>
+    <table class="table table-striped table-light">
+        <thead class="thead-dark">
+            <tr>
+
+                <th>Management Company</th>
+                <th>Property Phone Number</th>
+                <th>Address</th>
+                <th>Zip Code</th>
+            </tr>
+        </thead>
         @{
             foreach (Housing.HousingModel nhouse in houseDetail)
             {
                 <tr>
-                    
+
                     <td>@nhouse.ManagementCompany</td>
                     <td>@nhouse.PhoneNumber</td>
                     <td>@nhouse.Address</td>

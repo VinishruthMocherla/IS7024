@@ -1,20 +1,6 @@
 ﻿body {
     background-color: #FFFFFF;
 }
-
-#topnav {
-    background-color: lightgrey;
-    margin-top: 0px;
-    position: absolute;
-    vertical-align: top;
-    left: 0;
-    top: 0;
-    height: 4em;
-    width: 100%;
-    z-index: 100;
-}
-
-#content {
-    position: relative;
-    margin-top: 5em;
+.nomobile {
+    display: none;
 }
