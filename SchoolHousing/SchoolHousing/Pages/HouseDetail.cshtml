@@ -1,0 +1,35 @@
+﻿@page
+@model SchoolHousing.Pages.HouseDetailModel
+@{
+    var houseDetail = (Housing.HousingModel[])ViewData["HousingDetail"];
+}
+
+<!DOCTYPE html>
+
+<div class="text-center">
+    <h2 class="display-4">House Details in Washington Comunity Area </h2>
+
+    <table class="table table-bordered table-striped">
+        <tr>
+           
+            <th>Management Comapany</th>
+            <th>Property Phone Number</th>
+            <th>Address</th>
+            <th>Zip Code</th>
+        </tr>
+        @{
+            foreach (Housing.HousingModel nhouse in houseDetail)
+            {
+                <tr>
+                    
+                    <td>@nhouse.ManagementCompany</td>
+                    <td>@nhouse.PhoneNumber</td>
+                    <td>@nhouse.Address</td>
+                    <td>@nhouse.ZipCode</td>
+                </tr>
+            }
+        }
+
+    </table>
+</div>
+

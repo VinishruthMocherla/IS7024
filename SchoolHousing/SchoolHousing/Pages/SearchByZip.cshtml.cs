@@ -20,6 +20,7 @@ namespace SchoolHousing.Pages
         public ElementarySchoolResponse.ElementarySchool[] schools;
         public AffordableHouseResponse.AffordableHouse[] housesFiltered;
         public ElementarySchoolResponse.ElementarySchool[] schoolsFiltered;
+        
         public void OnGet()
         {
 
